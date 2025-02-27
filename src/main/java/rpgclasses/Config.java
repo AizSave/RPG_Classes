@@ -69,7 +69,7 @@ public class Config {
 
     public Config(String configFileName) {
         String filename = GlobalData.rootPath() + "settings\\classesmod\\" + configFileName;
-        System.out.println("Loading BiggerIslands settings");
+        System.out.println("Loading RPG Classes settings");
         try {
             File file = new File(filename);
             if (!file.exists()) createNewFile(file);
