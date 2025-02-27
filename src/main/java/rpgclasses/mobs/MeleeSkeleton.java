@@ -49,7 +49,7 @@ public class MeleeSkeleton extends AttackingFollowingMob {
             damagePercent /= 5.0F;
         }
 
-        return new GameDamage(DamageTypeRegistry.TRUE, (float)target.getMaxHealth() * damagePercent);
+        return new GameDamage(DamageTypeRegistry.TRUE, (float) target.getMaxHealth() * damagePercent);
     }
 
     public void init() {

@@ -41,7 +41,7 @@ public class RangeSkeletonBuff extends SimpleClassBuff {
                 .filter(f -> Objects.equals(f.summonType, "rangeskeleton"))
                 .collect(Collectors.toList());
 
-        if(necromancerFollowers.size() != summons) {
+        if (necromancerFollowers.size() != summons) {
             for (MobFollower m : necromancerFollowers) {
                 player.getServerClient().removeFollower(m.mob, true);
             }

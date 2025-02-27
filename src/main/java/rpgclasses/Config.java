@@ -68,7 +68,7 @@ public class Config {
     }
 
     public Config(String configFileName) {
-        String filename = GlobalData.rootPath() + "settings\\classesmod\\" + configFileName;
+        String filename = GlobalData.rootPath() + "settings\\rpgclasses\\" + configFileName;
         System.out.println("Loading RPG Classes settings");
         try {
             File file = new File(filename);
@@ -280,6 +280,7 @@ public class Config {
             System.out.println("Created file: " + file.toPath());
         }
     }
+
     public float getExperienceMod() {
         return experienceMod;
     }

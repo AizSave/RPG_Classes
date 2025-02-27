@@ -43,12 +43,12 @@ public class PrincipalAbilityClassContainer extends FormCustomButton {
         int style = GameInterfaceStyle.styles.indexOf(Settings.UI);
 
         HoverStateTextures hoverStateTextures;
-        if(playerData.classAbilitiesStringIDs.contains(classAbility.getStringID())) {
+        if (playerData.classAbilitiesStringIDs.contains(classAbility.getStringID())) {
             hoverStateTextures = RPG_Classes.class_principal_ability_unlocked[style];
         } else {
-            if(classAbility.canUnlock(playerMob, playerData) == null) {
+            if (classAbility.canUnlock(playerMob, playerData) == null) {
                 hoverStateTextures = RPG_Classes.class_principal_ability_available[style];
-            } else if(classAbility.isLocked(playerData)) {
+            } else if (classAbility.isLocked(playerData)) {
                 hoverStateTextures = RPG_Classes.class_principal_ability_locked[style];
             } else {
                 hoverStateTextures = RPG_Classes.class_principal_ability[style];
@@ -72,7 +72,7 @@ public class PrincipalAbilityClassContainer extends FormCustomButton {
 
         FontOptions titleOptions = new FontOptions(28).defaultColor(Settings.UI.activeTextColor);
         font.drawString(this.getX() + 168, this.getY() + 18, classAbility.ability.getDisplayName(), titleOptions);
-        
+
         FontOptions descriptionOptions = new FontOptions(14).defaultColor(Settings.UI.activeTextColor);
         String descriptionText = Localization.translate("abilitydescription", classAbility.ability.stringID + "_0");
         String[] descriptionSplit = descriptionText.trim().split("\n");

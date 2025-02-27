@@ -46,12 +46,12 @@ public class PlasmaGrenadeExplosionLevelEvent extends ExplosionEvent implements 
             ++this.particleBuffer;
         } else {
             this.particleBuffer = 0;
-            if (range <= (float)Math.max(this.range - 125, 25)) {
+            if (range <= (float) Math.max(this.range - 125, 25)) {
                 float dx = dirX * (float) GameRandom.globalRandom.getIntBetween(40, 50);
-                float dy = dirY * (float)GameRandom.globalRandom.getIntBetween(40, 50) * 0.8F;
+                float dy = dirY * (float) GameRandom.globalRandom.getIntBetween(40, 50) * 0.8F;
                 this.getLevel().entityManager.addParticle(x, y, this.explosionTypeSwitcher.next()).sprite(GameResources.puffParticles.sprite(GameRandom.globalRandom.getIntBetween(0, 4), 0, 12)).sizeFades(70, 100).givesLight(180F, 1F).movesFriction(dx * 0.05F, dy * 0.05F, 0.8F).color((options, lifeTime1, timeAlive, lifePercent) -> {
                     float clampedLifePercent = Math.max(0.0F, Math.min(1.0F, lifePercent));
-                    options.color(new Color(0, (int)(255 - 128 * clampedLifePercent), (int)(255 - 128 * clampedLifePercent)));
+                    options.color(new Color(0, (int) (255 - 128 * clampedLifePercent), (int) (255 - 128 * clampedLifePercent)));
                 }).heightMoves(0.0F, 10.0F).lifeTime(lifeTime * 3);
             }
         }

@@ -10,8 +10,8 @@ public class PaladinBuff extends SimpleClassBuff {
         super(
                 new ModifierValue<>(BuffModifiers.ARMOR, 0.5F),
                 new ModifierValue<>(AphModifiers.MAGIC_HEALING_RECEIVED, 0.5F),
-                new ModifierValue<>(BuffModifiers.SPEED,  -0.25F),
-                new ModifierValue<>(BuffModifiers.ATTACK_SPEED,  -0.5F)
+                new ModifierValue<>(BuffModifiers.SPEED, -0.25F),
+                new ModifierValue<>(BuffModifiers.ATTACK_SPEED, -0.5F)
         );
     }
 }

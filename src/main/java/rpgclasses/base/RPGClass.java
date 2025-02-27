@@ -22,7 +22,7 @@ public abstract class RPGClass {
     public void loadResources() {
         icons.clear();
         for (String principalAbility : principalAbilities) {
-            String id =principalAbility.replace("_0", "");
+            String id = principalAbility.replace("_0", "");
             icons.put(id, GameTexture.fromFile("classes/" + id));
         }
     }
@@ -77,7 +77,7 @@ public abstract class RPGClass {
     }
 
     public void addAbilityLevelSet(String stringID, int firstAbilityLevel, int lastAbilityLevel, AbilityRequirements firstAbilityRequirements) {
-        if(lastAbilityLevel <= firstAbilityLevel) {
+        if (lastAbilityLevel <= firstAbilityLevel) {
             throw new RuntimeException("lastAbilityLevel must be higher than firstAbilityLevel");
         }
         addAbility(stringID, firstAbilityLevel - 1, firstAbilityRequirements);
@@ -88,7 +88,7 @@ public abstract class RPGClass {
 
 
     public void addAbilityLevelSet(String stringID, int abilityLevels, AbilityRequirements firstAbilityRequirements) {
-        if(abilityLevels <= 0) {
+        if (abilityLevels <= 0) {
             throw new RuntimeException("abilityLevels must be higher than 0");
         }
         addAbility(stringID, 0, firstAbilityRequirements);

@@ -174,7 +174,7 @@ public class PlayerData {
     }
 
     public void updateBuffs(PlayerMob player, boolean sendUpdatePacket) {
-        if(player.isServer() || !sendUpdatePacket) {
+        if (player.isServer() || !sendUpdatePacket) {
             player.buffManager.addBuff(new ActiveBuff("dodgebuff", player, 1000, null), true);
 
             for (Ability ability : AbilityRegistry.abilities) {

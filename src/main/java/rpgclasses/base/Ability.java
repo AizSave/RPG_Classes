@@ -12,7 +12,7 @@ public class Ability {
         this.talentPoints = talentPoints;
         this.abilityLevels = abilityLevels;
 
-        if(talentPoints.length != abilityLevels) {
+        if (talentPoints.length != abilityLevels) {
             throw new RuntimeException("TalentPoints length must be equal to abilityLevels");
         }
     }

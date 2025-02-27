@@ -10,7 +10,7 @@ public class PriestBuff extends SimpleClassBuff {
         super(
                 new ModifierValue<>(AphModifiers.MAGIC_HEALING, 1F),
                 new ModifierValue<>(BuffModifiers.ARMOR, -0.5F),
-                new ModifierValue<>(BuffModifiers.MAX_HEALTH,  -0.5F)
+                new ModifierValue<>(BuffModifiers.MAX_HEALTH, -0.5F)
         );
     }
 }

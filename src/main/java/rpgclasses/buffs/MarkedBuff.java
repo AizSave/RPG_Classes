@@ -27,7 +27,7 @@ public class MarkedBuff extends Buff {
     }
 
     public void init(ActiveBuff buff, BuffEventSubscriber eventSubscriber) {
-        if(buff.owner.isServer()) {
+        if (buff.owner.isServer()) {
             clientMarked.put(buff.owner.getUniqueID(), buff.getAttacker() == null ? -1 : buff.getAttacker().getAttackerUniqueID());
         }
     }

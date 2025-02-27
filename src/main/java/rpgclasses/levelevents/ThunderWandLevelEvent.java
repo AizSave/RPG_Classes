@@ -60,31 +60,31 @@ public class ThunderWandLevelEvent extends HitboxEffectEvent implements Attacker
         this.hitsObjects = false;
         this.hits = new HashSet<>();
         if (this.isClient()) {
-            SoundManager.playSound(GameResources.electricExplosion, SoundEffect.effect((float)this.targetX, (float)this.targetY).volume(1.2F).pitch(0.8F));
-            float initialMoveX = (float)GameRandom.globalRandom.getIntBetween(-20, 20);
-            float initialMoveY = (float)GameRandom.globalRandom.getIntBetween(-20, 20);
+            SoundManager.playSound(GameResources.electricExplosion, SoundEffect.effect((float) this.targetX, (float) this.targetY).volume(1.2F).pitch(0.8F));
+            float initialMoveX = (float) GameRandom.globalRandom.getIntBetween(-20, 20);
+            float initialMoveY = (float) GameRandom.globalRandom.getIntBetween(-20, 20);
 
-            for(int i = 0; i < 6; ++i) {
+            for (int i = 0; i < 6; ++i) {
                 float finalMoveX;
                 float finalMoveY;
                 if (i == 0) {
                     finalMoveX = 0.0F;
                     finalMoveY = 0.0F;
                 } else {
-                    finalMoveX = (float)(GameRandom.globalRandom.getIntBetween(50, 80) * (GameRandom.globalRandom.getChance(0.5F) ? -1 : 1));
-                    finalMoveY = (float)(GameRandom.globalRandom.getIntBetween(50, 80) * (GameRandom.globalRandom.getChance(0.5F) ? -1 : 1));
+                    finalMoveX = (float) (GameRandom.globalRandom.getIntBetween(50, 80) * (GameRandom.globalRandom.getChance(0.5F) ? -1 : 1));
+                    finalMoveY = (float) (GameRandom.globalRandom.getIntBetween(50, 80) * (GameRandom.globalRandom.getChance(0.5F) ? -1 : 1));
                 }
 
-                float prevX = (float)this.targetX;
-                float prevY = (float)this.targetY;
+                float prevX = (float) this.targetX;
+                float prevY = (float) this.targetY;
                 LightningTrail trail = new LightningTrail(new TrailVector(prevX, prevY, 0.0F, 0.0F, i == 0 ? 20.0F : GameRandom.globalRandom.getFloatBetween(10.0F, 15.0F), 0.0F), this.level, this.level.isCave ? AphColors.palettePinkWitch[2] : AphColors.lighting);
                 this.level.entityManager.addTrail(trail);
 
-                for(int j = i == 0 ? 1 : i + 2; j < 10; ++j) {
-                    float progression = (float)j / 10.0F;
+                for (int j = i == 0 ? 1 : i + 2; j < 10; ++j) {
+                    float progression = (float) j / 10.0F;
                     float height = 500.0F * progression;
-                    float newX = (float)(this.targetX + GameRandom.globalRandom.getIntBetween(-5, 5)) + finalMoveY * (1.0F - progression) + initialMoveX * progression;
-                    float newY = (float)(this.targetY + GameRandom.globalRandom.getIntBetween(-5, 5)) + finalMoveX * (1.0F - progression) + initialMoveY * progression;
+                    float newX = (float) (this.targetX + GameRandom.globalRandom.getIntBetween(-5, 5)) + finalMoveY * (1.0F - progression) + initialMoveX * progression;
+                    float newY = (float) (this.targetY + GameRandom.globalRandom.getIntBetween(-5, 5)) + finalMoveX * (1.0F - progression) + initialMoveY * progression;
                     trail.addNewPoint(new TrailVector(newX, newY, newX - prevX, newY - prevY, trail.thickness, height));
                     prevX = newX;
                     prevY = newY;
@@ -125,7 +125,7 @@ public class ThunderWandLevelEvent extends HitboxEffectEvent implements Attacker
 
     public void serverHit(Mob target, boolean clientSubmitted) {
         if (clientSubmitted || !this.hits.contains(target.getUniqueID())) {
-            target.isServerHit(new GameDamage(DamageTypeRegistry.TRUE, (float)target.getMaxHealth() * 0.2F), target.x - this.owner.x, target.y - this.owner.y, 0, this.owner);
+            target.isServerHit(new GameDamage(DamageTypeRegistry.TRUE, (float) target.getMaxHealth() * 0.2F), target.x - this.owner.x, target.y - this.owner.y, 0, this.owner);
             target.addBuff(new ActiveBuff(AphBuffs.STUN, target, 2000, this), true);
 
             this.hits.add(target.getUniqueID());

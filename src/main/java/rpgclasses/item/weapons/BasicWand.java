@@ -66,44 +66,44 @@ public class BasicWand extends MagicProjectileToolItem implements ItemInteractAc
         Projectile projectile = new BasicWandProjectile(level, player, player.x, player.y, (float) x, (float) y, (float) this.getProjectileVelocity(item, player), this.getAttackRange(item), this.getAttackDamage(item), this.getKnockback(item, player));
         PlayerData playerData = PlayerDataList.getCurrentPlayer(player);
 
-        if(!player.buffManager.hasBuff("firewandcooldown") && playerData.classAbilitiesStringIDs.contains("firewand_0")) {
+        if (!player.buffManager.hasBuff("firewandcooldown") && playerData.classAbilitiesStringIDs.contains("firewand_0")) {
             projectile = new FireWandProjectile(level, player, player.x, player.y, (float) x, (float) y, (float) this.getProjectileVelocity(item, player), this.getAttackRange(item), this.getKnockback(item, player));
 
             int cooldown = 24000;
-            if(playerData.classAbilitiesStringIDs.contains("firewand_3")) {
+            if (playerData.classAbilitiesStringIDs.contains("firewand_3")) {
                 cooldown = 4000;
-            } else if(playerData.classAbilitiesStringIDs.contains("firewand_2")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("firewand_2")) {
                 cooldown /= 4;
-            } else if(playerData.classAbilitiesStringIDs.contains("firewand_1")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("firewand_1")) {
                 cooldown /= 2;
             }
             player.buffManager.addBuff(new ActiveBuff("firewandcooldown", player, cooldown, null), true);
         }
 
-        if(!player.buffManager.hasBuff("icewandcooldown") && playerData.classAbilitiesStringIDs.contains("icewand_0")) {
+        if (!player.buffManager.hasBuff("icewandcooldown") && playerData.classAbilitiesStringIDs.contains("icewand_0")) {
             projectile = new IceWandProjectile(level, player, player.x, player.y, (float) x, (float) y, (float) this.getProjectileVelocity(item, player), this.getAttackRange(item), this.getKnockback(item, player));
 
             int cooldown = 24000;
-            if(playerData.classAbilitiesStringIDs.contains("icewand_3")) {
+            if (playerData.classAbilitiesStringIDs.contains("icewand_3")) {
                 cooldown = 4000;
-            } else if(playerData.classAbilitiesStringIDs.contains("icewand_2")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("icewand_2")) {
                 cooldown /= 4;
-            } else if(playerData.classAbilitiesStringIDs.contains("icewand_1")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("icewand_1")) {
                 cooldown /= 2;
             }
 
             player.buffManager.addBuff(new ActiveBuff("icewandcooldown", player, cooldown, null), true);
         }
 
-        if(!player.buffManager.hasBuff("thunderwandcooldown") && playerData.classAbilitiesStringIDs.contains("thunderwand_0")) {
+        if (!player.buffManager.hasBuff("thunderwandcooldown") && playerData.classAbilitiesStringIDs.contains("thunderwand_0")) {
             projectile = new ThunderWandProjectile(level, player, player.x, player.y, (float) x, (float) y, (float) this.getProjectileVelocity(item, player), this.getAttackRange(item), this.getKnockback(item, player));
 
             int cooldown = 24000;
-            if(playerData.classAbilitiesStringIDs.contains("thunderwand_3")) {
+            if (playerData.classAbilitiesStringIDs.contains("thunderwand_3")) {
                 cooldown = 4000;
-            } else if(playerData.classAbilitiesStringIDs.contains("thunderwand_2")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("thunderwand_2")) {
                 cooldown /= 4;
-            } else if(playerData.classAbilitiesStringIDs.contains("thunderwand_1")) {
+            } else if (playerData.classAbilitiesStringIDs.contains("thunderwand_1")) {
                 cooldown /= 2;
             }
 

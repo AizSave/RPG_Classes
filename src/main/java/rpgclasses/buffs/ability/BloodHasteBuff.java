@@ -34,7 +34,7 @@ public class BloodHasteBuff extends SimpleClassBuff {
     public void updateBuff(ActiveBuff buff) {
         float healthPercent = buff.owner.getHealthPercent();
         float mod = 0.6F;
-        if(abilityLevel == 0) {
+        if (abilityLevel == 0) {
             mod /= 4;
         } else if (abilityLevel == 1) {
             mod /= 2;

@@ -35,7 +35,7 @@ public class EvasiveInstinctBuff extends SimpleClassBuff implements DodgeClassBu
         public void init(ActiveBuff buff, BuffEventSubscriber eventSubscriber) {
             super.init(buff, eventSubscriber);
             float mod = 0.6F;
-            if(abilityLevel == 0) {
+            if (abilityLevel == 0) {
                 mod /= 4;
             } else if (abilityLevel == 1) {
                 mod /= 2;

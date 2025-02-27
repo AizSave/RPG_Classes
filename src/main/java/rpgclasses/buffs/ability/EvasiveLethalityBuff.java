@@ -35,7 +35,7 @@ public class EvasiveLethalityBuff extends SimpleClassBuff implements DodgeClassB
         public void init(ActiveBuff buff, BuffEventSubscriber eventSubscriber) {
             super.init(buff, eventSubscriber);
             float mod = 0.4F;
-            if(abilityLevel == 0) {
+            if (abilityLevel == 0) {
                 mod /= 4;
             } else if (abilityLevel == 1) {
                 mod /= 2;

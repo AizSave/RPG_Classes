@@ -67,7 +67,7 @@ public class IceWandExplosionLevelEvent extends ExplosionEvent implements Attack
     }
 
     protected void onMobWasHit(Mob mob, float distance) {
-        if(!mob.isBoss()) {
+        if (!mob.isBoss()) {
             mob.buffManager.addBuff(new ActiveBuff(BuffRegistry.FROZEN_ENEMY, mob, 5000, null), true);
         }
     }

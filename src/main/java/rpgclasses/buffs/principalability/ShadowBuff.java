@@ -37,10 +37,10 @@ public class ShadowBuff extends SimpleClassBuff {
     }
 
     public void updateBuff(ActiveBuff buff) {
-        if(buff.owner.isPlayer) {
+        if (buff.owner.isPlayer) {
             PlayerMob player = (PlayerMob) buff.owner;
             Level level = player.getLevel();
-            if(level.getLightLevel(player.getTileX(), player.getTileY()).getLevel() <= 80) {
+            if (level.getLightLevel(player.getTileX(), player.getTileY()).getLevel() <= 80) {
                 buff.setModifier(BuffModifiers.MELEE_CRIT_DAMAGE, 0.5F);
                 buff.setModifier(BuffModifiers.CRIT_CHANCE, 0.2F);
             }

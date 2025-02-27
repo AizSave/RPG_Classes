@@ -17,7 +17,7 @@ import java.util.Objects;
 public class MobLevelSpawnPatch {
     @Advice.OnMethodEnter
     public static void onEnter(@Advice.This Level level, @Advice.Argument(0) Mob mob) {
-        if(mob.isHostile && !mob.isBoss()) {
+        if (mob.isHostile && !mob.isBoss()) {
             Config config = Config.getConfig();
             float mobHealthModifier = 100 + config.getMobsHealthModifier();
 

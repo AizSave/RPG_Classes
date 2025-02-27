@@ -40,7 +40,7 @@ public class HealingAreaBuff extends SimpleClassBuff {
     @Override
     public void serverTick(ActiveBuff buff) {
         timer++;
-        if(timer >= executeTimer) {
+        if (timer >= executeTimer) {
             timer = 0;
             Mob mob = buff.owner;
             AphArea area = areaList.areas[0];

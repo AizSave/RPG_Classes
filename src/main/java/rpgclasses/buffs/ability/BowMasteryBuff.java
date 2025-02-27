@@ -56,7 +56,7 @@ public class BowMasteryBuff extends SimpleClassBuff {
                 int newTargetX;
                 int newTargetY;
                 Mob targetMob = AphDistances.findClosestMob(player, m -> MarkedBuff.isMarked(player, m), 500);
-                if(targetMob == null) {
+                if (targetMob == null) {
                     newTargetX = GameRandom.globalRandom.getIntOffset(targetX, 32);
                     newTargetY = GameRandom.globalRandom.getIntOffset(targetY, 32);
                 } else {

@@ -65,7 +65,7 @@ public class LevelExtraDrops {
                         new ChanceLootItem(0.004F * chanceMod, "tomeofoblivion"),
                         new ChanceLootItem(0.002F * chanceMod, "codexofoblivion"),
                         new ChanceLootItem(0.0004F * chanceMod, "grimoireofoblivion")
-                        )
+                )
         );
     }
 }

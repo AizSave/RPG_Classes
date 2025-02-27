@@ -50,13 +50,13 @@ public class SacredJudgmentBuff extends SimpleClassBuff implements AphMagicHeali
             if (stacksDisplayCount > 1) {
                 text = "+" + stacksDisplayCount + "%";
                 width = FontManager.bit.getWidthCeil(text, durationFontOptions);
-                FontManager.bit.drawString((float)(x + 28 - width), (float)(y + 30 - FontManager.bit.getHeightCeil(text, durationFontOptions)), text, durationFontOptions);
+                FontManager.bit.drawString((float) (x + 28 - width), (float) (y + 30 - FontManager.bit.getHeightCeil(text, durationFontOptions)), text, durationFontOptions);
             }
 
             if (this.shouldDrawDuration(buff)) {
                 text = buff.getDurationText();
                 width = FontManager.bit.getWidthCeil(text, durationFontOptions);
-                FontManager.bit.drawString((float)(x + 16 - width / 2), (float)(y + 30), text, durationFontOptions);
+                FontManager.bit.drawString((float) (x + 16 - width / 2), (float) (y + 30), text, durationFontOptions);
             }
         }
 

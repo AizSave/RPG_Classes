@@ -34,7 +34,7 @@ public class OverchargeBuff extends SimpleClassBuff {
     public void updateBuff(ActiveBuff buff) {
         float manaPercent = buff.owner.getMana() / buff.owner.getMaxMana();
         float mod = 0.8F;
-        if(abilityLevel == 0) {
+        if (abilityLevel == 0) {
             mod /= 4;
         } else if (abilityLevel == 1) {
             mod /= 2;
