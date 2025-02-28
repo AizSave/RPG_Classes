@@ -34,7 +34,7 @@ public class UpdateClientDataPacket extends Packet {
         PacketWriter writer = new PacketWriter(this);
 
         writer.putNextString(name);
-        writer.putNextFloat(exp);
+        writer.putNextInt(exp);
         writer.putNextStringLong(String.join("-", abilities));
     }
 
