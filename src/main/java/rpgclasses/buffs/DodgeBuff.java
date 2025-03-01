@@ -32,7 +32,7 @@ public class DodgeBuff extends SimpleClassBuff {
 
     private boolean preventDamage(ActiveBuff buff) {
         String prevent = this.shouldPreventDamage(buff);
-        if (prevent != null) {
+        if (prevent != null && buff.owner.isServer()) {
             if (prevent.equals("dodge")) {
                 buff.owner.getServer().network.sendToAllClients(new ShowDodgePacket(buff.owner.getX(), buff.owner.getY()));
                 final List<ActiveBuff> dodgeClassBuffs = buff.owner.buffManager.getBuffs().values().stream().filter(activeBuff -> activeBuff.buff instanceof DodgeClassBuff).collect(Collectors.toList());
