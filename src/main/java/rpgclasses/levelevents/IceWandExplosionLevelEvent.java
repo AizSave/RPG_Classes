@@ -1,7 +1,6 @@
 package rpgclasses.levelevents;
 
 import necesse.engine.registries.BuffRegistry;
-import necesse.engine.registries.DamageTypeRegistry;
 import necesse.engine.sound.SoundEffect;
 import necesse.engine.sound.SoundManager;
 import necesse.engine.util.GameRandom;

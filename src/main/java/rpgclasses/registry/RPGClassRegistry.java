@@ -1,9 +1,11 @@
 package rpgclasses.registry;
 
-import rpgclasses.classes.*;
 import rpgclasses.base.RPGClass;
+import rpgclasses.classes.*;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Objects;
 
 public final class RPGClassRegistry {
     public static final List<RPGClass> RPGClasses = new ArrayList<>();

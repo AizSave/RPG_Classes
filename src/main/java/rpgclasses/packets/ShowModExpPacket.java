@@ -1,7 +1,6 @@
 package rpgclasses.packets;
 
 import necesse.engine.localization.Localization;
-import necesse.engine.localization.message.LocalMessage;
 import necesse.engine.network.NetworkPacket;
 import necesse.engine.network.Packet;
 import necesse.engine.network.PacketReader;
@@ -17,6 +16,7 @@ import necesse.level.maps.Level;
 import necesse.level.maps.hudManager.floatText.UniqueFloatText;
 import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
+import rpgclasses.expbar.ExpBarManger;
 
 import java.awt.*;
 
@@ -48,10 +48,6 @@ public class ShowModExpPacket extends Packet {
         writer.putNextBoolean(levelUp);
     }
 
-    public ShowModExpPacket(int x, int y, int exp) {
-        this(x, y, exp, false);
-    }
-
     public void processClient(NetworkPacket packet, Client client) {
         if (exp != 0) {
             UniqueFloatText text = new UniqueFloatText(x, y - 20, (exp > 0 ? "+" + exp : exp) + " " + Localization.translate("message", "xp") + (levelUp ? " - " + Localization.translate("message", "levelup") : ""), (new FontOptions(16)).outline().color(exp > 0 ? new Color(100, 200, 100) : new Color(200, 100, 100)), "expmod") {
@@ -69,6 +65,10 @@ public class ShowModExpPacket extends Packet {
             if (levelUp) {
                 level.entityManager.addParticle(new FireworksRocketParticle(level, x, y, 600, 300, getExplosion(GameRandom.globalRandom), GameRandom.globalRandom), true, Particle.GType.CRITICAL);
             }
+
+            PlayerData playerData = PlayerDataList.getCurrentPlayer(client.getPlayer());
+            playerData.loadData(playerData.exp + exp);
+            ExpBarManger.updateExpBar(playerData);
         }
     }
 

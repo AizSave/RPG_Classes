@@ -2,7 +2,6 @@ package rpgclasses.data;
 
 
 import necesse.entity.mobs.PlayerMob;
-import necesse.inventory.container.travel.TravelContainer;
 
 import java.util.ArrayList;
 

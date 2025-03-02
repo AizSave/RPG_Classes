@@ -1,6 +1,5 @@
 package rpgclasses.item.weapons;
 
-import aphorea.items.weapons.magic.UnstableGelStaff;
 import necesse.engine.localization.Localization;
 import necesse.engine.network.PacketReader;
 import necesse.engine.network.packet.PacketSpawnProjectile;
@@ -24,9 +23,9 @@ import necesse.level.maps.Level;
 import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
 import rpgclasses.projectiles.BasicWandProjectile;
-import rpgclasses.projectiles.ThunderWandProjectile;
 import rpgclasses.projectiles.FireWandProjectile;
 import rpgclasses.projectiles.IceWandProjectile;
+import rpgclasses.projectiles.ThunderWandProjectile;
 
 public class BasicWand extends MagicProjectileToolItem implements ItemInteractAction {
 

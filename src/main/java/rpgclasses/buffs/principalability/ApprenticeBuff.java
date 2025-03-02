@@ -2,7 +2,6 @@ package rpgclasses.buffs.principalability;
 
 import necesse.engine.modifiers.ModifierValue;
 import necesse.entity.mobs.buffs.BuffModifiers;
-import rpgclasses.RPG_Classes;
 import rpgclasses.buffs.SimpleClassBuff;
 
 public class ApprenticeBuff extends SimpleClassBuff {

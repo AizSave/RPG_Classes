@@ -1,6 +1,5 @@
 package rpgclasses.classes;
 
-import aphorea.items.weapons.magic.UnstableGelStaff;
 import rpgclasses.base.AbilityRequirements;
 import rpgclasses.base.RPGClass;
 

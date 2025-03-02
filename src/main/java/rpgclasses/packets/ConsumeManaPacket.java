@@ -8,7 +8,6 @@ import necesse.engine.network.client.Client;
 import necesse.engine.network.client.ClientClient;
 import necesse.engine.network.packet.PacketRequestPlayerData;
 import necesse.entity.mobs.PlayerMob;
-import rpgclasses.data.PlayerDataList;
 
 public class ConsumeManaPacket extends Packet {
     public final int slot;

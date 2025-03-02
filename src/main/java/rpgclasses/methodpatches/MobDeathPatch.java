@@ -13,7 +13,6 @@ import net.bytebuddy.asm.Advice;
 import rpgclasses.Config;
 import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
-import rpgclasses.packets.ShowModExpPacket;
 
 import java.util.HashSet;
 import java.util.Objects;

@@ -1,7 +1,6 @@
 package rpgclasses.methodpatches.playerdata;
 
 import necesse.engine.modLoader.annotations.ModMethodPatch;
-import necesse.engine.network.server.ServerClient;
 import necesse.engine.save.LoadData;
 import necesse.entity.mobs.PlayerMob;
 import net.bytebuddy.asm.Advice;

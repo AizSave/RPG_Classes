@@ -1,12 +1,9 @@
 package rpgclasses.projectiles;
 
-import aphorea.utils.area.AphArea;
-import aphorea.utils.area.AphAreaList;
 import necesse.engine.gameLoop.tickManager.TickManager;
 import necesse.entity.mobs.GameDamage;
 import necesse.entity.mobs.Mob;
 import necesse.entity.mobs.PlayerMob;
-import necesse.entity.mobs.buffs.staticBuffs.FrozenEnemyBuff;
 import necesse.entity.projectile.Projectile;
 import necesse.entity.trails.Trail;
 import necesse.gfx.camera.GameCamera;
@@ -17,7 +14,6 @@ import necesse.gfx.drawables.OrderableDrawables;
 import necesse.level.maps.Level;
 import necesse.level.maps.LevelObjectHit;
 import necesse.level.maps.light.GameLight;
-import rpgclasses.levelevents.FireWandExplosionLevelEvent;
 import rpgclasses.levelevents.IceWandExplosionLevelEvent;
 
 import java.awt.*;

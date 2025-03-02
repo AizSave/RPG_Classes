@@ -1,6 +1,5 @@
 package rpgclasses.levelevents;
 
-import aphorea.particles.AphRuneOfThunderParticle;
 import aphorea.registry.AphBuffs;
 import aphorea.utils.AphColors;
 import necesse.engine.network.PacketReader;
@@ -14,7 +13,6 @@ import necesse.entity.mobs.Attacker;
 import necesse.entity.mobs.GameDamage;
 import necesse.entity.mobs.Mob;
 import necesse.entity.mobs.buffs.ActiveBuff;
-import necesse.entity.particle.Particle;
 import necesse.entity.trails.LightningTrail;
 import necesse.entity.trails.TrailVector;
 import necesse.gfx.GameResources;
@@ -125,7 +123,14 @@ public class ThunderWandLevelEvent extends HitboxEffectEvent implements Attacker
 
     public void serverHit(Mob target, boolean clientSubmitted) {
         if (clientSubmitted || !this.hits.contains(target.getUniqueID())) {
-            target.isServerHit(new GameDamage(DamageTypeRegistry.TRUE, (float) target.getMaxHealth() * 0.2F), target.x - this.owner.x, target.y - this.owner.y, 0, this.owner);
+            float damagePercent = 0.2F;
+            if (target.isBoss()) {
+                damagePercent = 0;
+            } else if (target.isPlayer || target.isHuman) {
+                damagePercent /= 5.0F;
+            }
+
+            target.isServerHit(new GameDamage(DamageTypeRegistry.TRUE, (float) target.getMaxHealth() * damagePercent), target.x - this.owner.x, target.y - this.owner.y, 0, this.owner);
             target.addBuff(new ActiveBuff(AphBuffs.STUN, target, 2000, this), true);
 
             this.hits.add(target.getUniqueID());

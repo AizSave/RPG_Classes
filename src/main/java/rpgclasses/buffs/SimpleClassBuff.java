@@ -1,13 +1,9 @@
 package rpgclasses.buffs;
 
-import necesse.engine.modifiers.Modifier;
-import necesse.engine.modifiers.ModifierLimiter;
 import necesse.engine.modifiers.ModifierValue;
-import necesse.entity.mobs.MobBeforeDamageOverTimeTakenEvent;
 import necesse.entity.mobs.buffs.ActiveBuff;
 import necesse.entity.mobs.buffs.BuffEventSubscriber;
 import necesse.entity.mobs.buffs.staticBuffs.Buff;
-import necesse.entity.mobs.buffs.staticBuffs.VicinityBuff;
 
 public class SimpleClassBuff extends Buff {
     protected ModifierValue<?>[] modifiers;

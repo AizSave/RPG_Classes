@@ -54,6 +54,7 @@ import rpgclasses.registry.RPGClassRegistry;
 
 import java.lang.reflect.Field;
 
+
 @ModEntry
 public class RPG_Classes {
 
@@ -94,6 +95,8 @@ public class RPG_Classes {
         PacketRegistry.registerPacket(ConsumeManaPacket.class);
         PacketRegistry.registerPacket(LoadPlayerDataPacket.class);
         PacketRegistry.registerPacket(UpdateClientDataPacket.class);
+        PacketRegistry.registerPacket(UpdateClientExpPacket.class);
+        PacketRegistry.registerPacket(UpdateClientAbilitiesPacket.class);
 
         ItemRegistry.registerItem("basicwand", new BasicWand(), -1F, true);
         ItemRegistry.registerItem("scrollofoblivion", new ScrollOfOblivion(), 100F, true);

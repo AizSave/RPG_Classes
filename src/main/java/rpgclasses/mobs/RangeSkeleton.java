@@ -2,7 +2,6 @@ package rpgclasses.mobs;
 
 import necesse.engine.gameLoop.tickManager.TickManager;
 import necesse.engine.registries.MobRegistry;
-import necesse.engine.registries.ProjectileRegistry;
 import necesse.engine.sound.SoundEffect;
 import necesse.engine.sound.SoundManager;
 import necesse.engine.util.GameRandom;
@@ -15,7 +14,6 @@ import necesse.entity.mobs.ai.behaviourTree.trees.PlayerFollowerChaserAI;
 import necesse.entity.mobs.summon.summonFollowingMob.attackingFollowingMob.AttackingFollowingMob;
 import necesse.entity.particle.FleshParticle;
 import necesse.entity.particle.Particle;
-import necesse.entity.projectile.BabyBoneProjectile;
 import necesse.entity.projectile.Projectile;
 import necesse.gfx.GameResources;
 import necesse.gfx.camera.GameCamera;

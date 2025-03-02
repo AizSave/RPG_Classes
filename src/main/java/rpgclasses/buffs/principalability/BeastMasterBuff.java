@@ -9,7 +9,6 @@ import necesse.entity.mobs.PlayerMob;
 import necesse.entity.mobs.buffs.ActiveBuff;
 import necesse.entity.mobs.buffs.BuffModifiers;
 import necesse.entity.mobs.summon.summonFollowingMob.attackingFollowingMob.AttackingFollowingMob;
-import necesse.inventory.item.toolItem.summonToolItem.SummonToolItem;
 import rpgclasses.buffs.MarkedBuff;
 import rpgclasses.buffs.SimpleClassBuff;
 

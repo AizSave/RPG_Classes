@@ -35,8 +35,15 @@ public class PlayerData {
     }
 
     public void loadData(int exp, String[] abilities) {
-        this.exp = exp;
+        loadData(exp);
+        loadData(abilities);
+    }
 
+    public void loadData(int exp) {
+        this.exp = exp;
+    }
+
+    public void loadData(String[] abilities) {
         this.classAbilitiesStringIDs.clear();
         classAbilitiesStringIDs.addAll(Arrays.stream(abilities)
                 .filter(abilityStringID -> {
@@ -58,7 +65,6 @@ public class PlayerData {
 
         classActiveAbilitiesStringIDs.clear();
         getHighestLevelAbilities().forEach((key, value) -> classActiveAbilitiesStringIDs.add(key + "_" + value));
-
     }
 
     public void saveData(SaveData saveData) {

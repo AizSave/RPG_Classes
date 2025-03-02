@@ -10,6 +10,7 @@ import necesse.engine.network.server.ServerClient;
 import necesse.entity.mobs.PlayerMob;
 import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
+import rpgclasses.expbar.ExpBarManger;
 
 public class LoadPlayerDataPacket extends Packet {
 
@@ -44,6 +45,7 @@ public class LoadPlayerDataPacket extends Packet {
         PlayerData playerData = PlayerDataList.getCurrentPlayer(player);
         playerData.loadData(exp, abilities);
         playerData.updateBuffs(player, false);
+        ExpBarManger.updateExpBar(playerData);
     }
 
     @Override

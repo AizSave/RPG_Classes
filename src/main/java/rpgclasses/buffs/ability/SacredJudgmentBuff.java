@@ -3,7 +3,6 @@ package rpgclasses.buffs.ability;
 import aphorea.utils.magichealing.AphMagicHealingFunctions;
 import necesse.engine.modifiers.ModifierValue;
 import necesse.entity.mobs.Mob;
-import necesse.entity.mobs.MobWasHitEvent;
 import necesse.entity.mobs.buffs.ActiveBuff;
 import necesse.entity.mobs.buffs.BuffEventSubscriber;
 import necesse.entity.mobs.buffs.BuffModifiers;

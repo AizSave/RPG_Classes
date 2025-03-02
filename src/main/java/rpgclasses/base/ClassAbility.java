@@ -8,7 +8,9 @@ import rpgclasses.data.PlayerDataList;
 import rpgclasses.registry.AbilityRegistry;
 import rpgclasses.registry.RPGClassRegistry;
 
-import java.util.*;
+import java.util.HashSet;
+import java.util.Objects;
+import java.util.Set;
 
 public class ClassAbility {
     public Ability ability;

@@ -12,44 +12,40 @@ import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
 import rpgclasses.expbar.ExpBarManger;
 
-public class UpdateClientDataPacket extends Packet {
+public class UpdateClientExpPacket extends Packet {
 
     public final String name;
     public final int exp;
-    public final String[] abilities;
 
-    public UpdateClientDataPacket(byte[] data) {
+    public UpdateClientExpPacket(byte[] data) {
         super(data);
         PacketReader reader = new PacketReader(this);
 
         name = reader.getNextString();
         exp = reader.getNextInt();
-        abilities = reader.getNextStringLong().split("-");
     }
 
-    public UpdateClientDataPacket(String name, PlayerData playerData) {
+    public UpdateClientExpPacket(String name, PlayerData playerData) {
         this.name = name;
         this.exp = playerData.exp;
-        this.abilities = playerData.classAbilitiesStringIDs.toArray(new String[0]);
 
         PacketWriter writer = new PacketWriter(this);
 
         writer.putNextString(name);
         writer.putNextInt(exp);
-        writer.putNextStringLong(String.join("-", abilities));
     }
 
     @Override
     public void processClient(NetworkPacket packet, Client client) {
         PlayerMob player = client.getPlayer();
         PlayerData playerData = PlayerDataList.getCurrentPlayer(player);
-        playerData.loadData(exp, abilities);
+        playerData.loadData(exp);
         ExpBarManger.updateExpBar(playerData);
     }
 
     @Override
     public void processServer(NetworkPacket packet, Server server, ServerClient client) {
         PlayerData playerData = PlayerDataList.getCurrentPlayer(name);
-        client.sendPacket(new UpdateClientDataPacket(client.playerMob.playerName, playerData));
+        client.sendPacket(new UpdateClientExpPacket(client.playerMob.playerName, playerData));
     }
 }

@@ -1,8 +1,6 @@
 package rpgclasses.buffs.ability;
 
-import aphorea.projectiles.mob.PinkWitchProjectile;
 import aphorea.utils.AphDistances;
-import necesse.engine.GameLog;
 import necesse.engine.network.Packet;
 import necesse.engine.network.PacketReader;
 import necesse.engine.registries.ItemRegistry;

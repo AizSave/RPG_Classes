@@ -8,10 +8,6 @@ import necesse.inventory.lootTable.lootItem.ChanceLootItem;
 import necesse.inventory.lootTable.lootItem.LootItemList;
 import necesse.level.maps.Level;
 import net.bytebuddy.asm.Advice;
-import rpgclasses.item.CodexOfOblivion;
-import rpgclasses.item.GrimoireOfOblivion;
-import rpgclasses.item.ScrollOfOblivion;
-import rpgclasses.item.TomeOfOblivion;
 
 import java.util.Objects;
 

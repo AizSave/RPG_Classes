@@ -22,6 +22,9 @@ public class BarbarianBuff extends SimpleClassBuff {
     public void init(ActiveBuff buff, BuffEventSubscriber eventSubscriber) {
         super.init(buff, eventSubscriber);
         updateBuff(buff);
+        buff.setMaxModifier(BuffModifiers.ARMOR, -1000F);
+        buff.setMaxModifier(BuffModifiers.MAX_RESILIENCE, -1000F);
+        buff.setMaxModifier(BuffModifiers.MAX_MANA, -1000F);
     }
 
     @Override

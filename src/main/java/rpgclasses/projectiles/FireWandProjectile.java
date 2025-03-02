@@ -15,7 +15,6 @@ import necesse.level.maps.Level;
 import necesse.level.maps.LevelObjectHit;
 import necesse.level.maps.light.GameLight;
 import rpgclasses.levelevents.FireWandExplosionLevelEvent;
-import rpgclasses.levelevents.PlasmaGrenadeExplosionLevelEvent;
 
 import java.awt.*;
 import java.util.List;

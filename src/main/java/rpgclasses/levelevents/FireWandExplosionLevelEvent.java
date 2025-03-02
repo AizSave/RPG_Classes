@@ -14,7 +14,6 @@ import necesse.entity.mobs.PlayerMob;
 import necesse.entity.mobs.buffs.ActiveBuff;
 import necesse.entity.particle.Particle;
 import necesse.gfx.GameResources;
-import necesse.level.maps.biomes.snow.SnowCaveLevel;
 
 import java.awt.*;
 

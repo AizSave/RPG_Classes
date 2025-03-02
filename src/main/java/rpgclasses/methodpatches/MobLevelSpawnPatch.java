@@ -1,12 +1,8 @@
 package rpgclasses.methodpatches;
 
-import aphorea.mobs.bosses.UnstableGelSlime;
 import necesse.engine.modLoader.annotations.ModMethodPatch;
 import necesse.engine.registries.BiomeRegistry;
-import necesse.engine.registries.MobRegistry;
 import necesse.entity.mobs.Mob;
-import necesse.entity.mobs.hostile.bosses.BossMob;
-import necesse.entity.mobs.hostile.bosses.EvilsProtectorMob;
 import necesse.level.maps.Level;
 import net.bytebuddy.asm.Advice;
 import rpgclasses.Config;
