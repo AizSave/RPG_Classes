@@ -3,7 +3,7 @@ rpgclasses=§!RPG Classes
 
 
 [buffmodifiers]
-dodgechance=<mod>% Chance de Esquiva
+dodgechance=<mod>% de Chance de Esquiva
 
 
 [rpgclass]
@@ -38,8 +38,8 @@ lethality=Letalidade
 swiftness=Celeridade
 quickhands=Mãos Ágeis
 stealth=Furtividade
-accuracy=Precisão
-precision=Exatidão
+accuracy=Acurácia
+precision=Precisão
 huntersmark=Marca do Caçador
 manaspring=Fonte de Mana
 arcanepower=Poder Arcano
@@ -63,35 +63,35 @@ plasmagrenade=Granada de Plasma
 bowmastery=Mestria com Arco
 firewand=Varinha de Fogo
 icewand=Varinha de Gelo
-thunderwand=Varinha de Trovão
+thunderwand=Varinha do Trovão
 overcharge=Sobrecarga
 firereaction=Reação de Fogo
 icereaction=Reação de Gelo
 thunderreaction=Reação de Trovão
 evasiveinstinct=Instinto Evasivo
 evasivelethality=Letalidade Evasiva
-meleeskeleton=Esqueleto Corpo a Corpo
-rangeskeleton=Esqueleto à Distância
+meleeskeleton=Esqueleto Corpo-a-Corpo
+rangeskeleton=Esqueleto Atirador
 healingarea=Área de Cura
 sacredjudgment=Julgamento Sagrado
 
 
 [classmessage]
-alreadyunlocked=Esta habilidade já está desbloqueada
+alreadyunlocked=Você já desbloqueou esta habilidade
 needsprincipalability=Você precisa desbloquear a habilidade principal da classe primeiro
 needsanteriorlevel=Você precisa desbloquear o nível anterior desta habilidade primeiro
 needsrequiredability=Você precisa desbloquear a habilidade requerida primeiro
-lockedbyanotherability=Esta habilidade está bloqueada por outra habilidade que você já desbloqueou
+lockedbyanotherability=Esta habilidade está bloqueada por outra habilidade
 needsmoreaffinity=Você não tem afinidade suficiente com esta classe
 needsmoretalentpoints=Você precisa de mais pontos de talento para desbloquear esta habilidade
-abilityunlocked=Você desbloqueou a habilidade <ability> nível <level>!
+abilityunlocked=Você desbloqueou a habilidade <ability> de nível <level>!
 alreadyprincipalability=Você já desbloqueou a habilidade principal de uma classe
 newmobkill=Você ganhou <exp> de experiência por matar <mob> pela primeira vez
 newlevel=Parabéns! Você atingiu o nível <level>. Pressione [input=openclassesmenu] para usar seu novo Ponto de Talento!
-talentpointsrestarted=Você deselecionou todas as suas habilidades
-talentpointsrestarted8=Você deselecionou suas últimas 8 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
-talentpointsrestarted3=Você deselecionou suas últimas 3 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>
-talentpointsrestarted1=Você deselecionou sua última habilidade: <hab>
+talentpointsrestarted=Você reiniciou todas as suas habilidades
+talentpointsrestarted8=Você reiniciou suas últimas 8 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
+talentpointsrestarted3=Você reiniciou suas últimas 3 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>
+talentpointsrestarted1=Você reiniciou sua última habilidade: <hab>
 
 
 [controls]
@@ -126,8 +126,8 @@ alreadyprincipalability=§6Você já desbloqueou a habilidade principal de uma c
 clicktounlock=[input=mouse1] para desbloquear
 
 // Subclasses
-warrior_0=+20% de dano corpo a corpo e à distância\nDano aos atacantes baseado na sua armadura\nMetade do dano a atacantes distantes\n-50% de Mana
-barbarian_0=+100% de Saúde Total e Regeneração de Saúde\nAumenta o dano corpo a corpo e a velocidade enquanto\nataca em +1% para cada 1% de saúde perdida\nSeus e armadura, resistência e mana serão sempre 0
+warrior_0=+20% de dano corpo a corpo e à distância\nDano aos atacantes baseado na sua armadura\nMetade do dano a atacantes à distancia\n-50% de Mana
+barbarian_0=+100% de Saúde Total e Regeneração de Saúde\nAumenta o dano corpo a corpo e a velocidade enquanto\nataca em +1% para cada 1% de saúde perdida\nSua armadura, resistência e mana serão sempre 0
 
 assassin_0=+50% de Dano Crítico Corpo a Corpo\n+10% de Chance Crítica, +20% de Chance de Esquiva\n-25% de Armadura e -25% de Saúde Máxima
 shadow_0=-20% de Alcance do Alvo e +30% de Velocidade\n+50% de Dano Crítico Corpo a Corpo em áreas escuras\n+20% de Chance Crítica em áreas escuras\n-25% de Armadura e -25% de Saúde Máxima
@@ -179,12 +179,12 @@ lethality_3=+8% de Chance Crítica\n+20% de Dano Crítico Corpo a Corpo
 lethality_4=+12% de Chance Crítica\n+30% de Dano Crítico Corpo a Corpo
 lethality_5=+16% de Chance Crítica\n+40% de Dano Crítico Corpo a Corpo
 
-swiftness_0=+3% de Velocidade de Movimento\n+3% de Esquiva
-swiftness_1=+6% de Velocidade de Movimento\n+6% de Esquiva
-swiftness_2=+9% de Velocidade de Movimento\n+9% de Esquiva
-swiftness_3=+12% de Velocidade de Movimento\n+12% de Esquiva
-swiftness_4=+18% de Velocidade de Movimento\n+18% de Esquiva
-swiftness_5=+24% de Velocidade de Movimento\n+24% de Esquiva
+swiftness_0=+3% de Velocidade de Movimento\n+3% de Chance de Esquiva
+swiftness_1=+6% de Velocidade de Movimento\n+6% de Chance de Esquiva
+swiftness_2=+9% de Velocidade de Movimento\n+9% de Chance de Esquiva
+swiftness_3=+12% de Velocidade de Movimento\n+12% de Chance de Esquiva
+swiftness_4=+18% de Velocidade de Movimento\n+18% de Chance de Esquiva
+swiftness_5=+24% de Velocidade de Movimento\n+24% de Chance de Esquiva
 
 quickhands_0=+5% de Velocidade de Ataque\n+10% de Velocidade de Arremesso
 quickhands_1=+10% de Velocidade de Ataque\n+20% de Velocidade de Arremesso
@@ -242,12 +242,12 @@ arcaneprecision_3=+8% de Chance Crítica\n+20% de Dano Crítico Mágico
 arcaneprecision_4=+12% de Chance Crítica\n+30% de Dano Crítico Mágico
 arcaneprecision_5=+16% de Chance Crítica\n+40% de Dano Crítico Mágico
 
-abundantarmy_0=+1 de Invocação Máxima
-abundantarmy_1=+2 de Invocações Máximas
-abundantarmy_2=+3 de Invocações Máximas
-abundantarmy_3=+4 de Invocações Máximas
-abundantarmy_4=+5 de Invocações Máximas
-abundantarmy_5=+6 de Invocações Máximas
+abundantarmy_0=+1 Invocação Máxima
+abundantarmy_1=+2 Invocações Máximas
+abundantarmy_2=+3 Invocações Máximas
+abundantarmy_3=+4 Invocações Máximas
+abundantarmy_4=+5 Invocações Máximas
+abundantarmy_5=+6 Invocações Máximas
 
 leadership_0=+5% de Velocidade das Invocações\n+5% de Velocidade de Ataque das Invocações
 leadership_1=+10% de Velocidade das Invocações\n+10% de Velocidade de Ataque das Invocações
@@ -299,17 +299,17 @@ bloodhaste_0=Aumenta a Velocidade de Movimento em +0,15% para cada 1% de Saúde 
 bloodhaste_1=Aumenta a Velocidade de Movimento em +0,3% para cada 1% de Saúde perdida
 bloodhaste_2=Aumenta a Velocidade de Movimento em +0,6% para cada 1% de Saúde perdida
 
-relentlessstrikes_0=Acertar um ataque de perto concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 2 vezes
-relentlessstrikes_1=Acertar um ataque de perto concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 4 vezes
-relentlessstrikes_2=Acertar um ataque de perto concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 8 vezes
+relentlessstrikes_0=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 2 vezes
+relentlessstrikes_1=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 4 vezes
+relentlessstrikes_2=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 8 vezes
 
-relentlesschase_0=Acertar um ataque de perto concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 2 vezes
-relentlesschase_1=Acertar um ataque de perto concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 4 vezes
-relentlesschase_2=Acertar um ataque de perto concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 8 vezes
+relentlesschase_0=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 2 vezes
+relentlesschase_1=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 4 vezes
+relentlesschase_2=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento por 2 segundos\nPode acumular até 8 vezes
 
-relentlessevasion_0=Acertar um ataque de perto concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 2 vezes
-relentlessevasion_1=Acertar um ataque de perto concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 4 vezes
-relentlessevasion_2=Acertar um ataque de perto concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 8 vezes
+relentlessevasion_0=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 2 vezes
+relentlessevasion_1=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 4 vezes
+relentlessevasion_2=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 8 vezes
 
 criticaledge_0=Aumenta a Chance Crítica em +0,2% para cada 1% de Saúde perdida
 criticaledge_1=Aumenta a Chance Crítica em +0,4% para cada 1% de Saúde perdida
@@ -323,9 +323,9 @@ evasivelethality_0=Esquivar de um ataque aumenta a Chance Crítica em 10% por 5 
 evasivelethality_1=Esquivar de um ataque aumenta a Chance Crítica em 20% por 5 segundos
 evasivelethality_2=Esquivar de um ataque aumenta a Chance Crítica em 40% por 5 segundos
 
-magicranger_0=Ao acertar um inimigo com um ataque à distância, você perderá 2 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana
-magicranger_1=Ao acertar um inimigo com um ataque à distância, você perderá 1 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana
-magicranger_2=Ao acertar um inimigo com um ataque à distância, você perderá 0,5 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana
+magicranger_0=Ao acertar um inimigo com um ataque à distância, você perderá 2 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
+magicranger_1=Ao acertar um inimigo com um ataque à distância, você perderá 1 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
+magicranger_2=Ao acertar um inimigo com um ataque à distância, você perderá 0,5 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
 
 plasmagrenade_0=A cada 8 disparos, dispara um projétil explosivo teleguiado\nO projétil caçará inimigos marcados\nO dano é metade do dano original do projétil
 plasmagrenade_1=A cada 8 disparos, dispara um projétil explosivo teleguiado\nO projétil caçará inimigos marcados\nO dano é o dano original do projétil
@@ -370,9 +370,9 @@ meleeskeleton_0=Invoca 1 Esqueleto Corpo a Corpo que causa 1% da saúde máxima 
 meleeskeleton_1=Invoca 2 Esqueletos Corpo a Corpo que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
 meleeskeleton_2=Invoca 3 Esqueletos Corpo a Corpo que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
 
-rangeskeleton_0=Invoca 1 Esqueleto à Distância que causa 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
-rangeskeleton_1=Invoca 2 Esqueletos à Distância que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
-rangeskeleton_2=Invoca 3 Esqueletos à Distância que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+rangeskeleton_0=Invoca 1 Esqueleto Atirador que causa 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+rangeskeleton_1=Invoca 2 Esqueletos Atirador que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+rangeskeleton_2=Invoca 3 Esqueletos Atirador que causam 1% da saúde máxima dos inimigos como dano\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
 
 healingarea_0=Libera uma área de cura mágica a cada 12 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
 healingarea_1=Libera uma área de cura mágica a cada 9 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
