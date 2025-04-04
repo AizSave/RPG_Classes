@@ -30,7 +30,7 @@ public class MagicRangerBuff extends SimpleClassBuff {
                 PlayerMob player = ((PlayerMob) buff.owner);
                 buff.owner.useMana(manaCost, player.isServerClient() ? player.getServerClient() : null);
                 buff.owner.getServer().network.sendToClientsWithAnyRegion(new ConsumeManaPacket(((PlayerMob) buff.owner).getServerClient().slot, manaCost), buff.owner.getRegionPositions());
-                event.damage = event.damage.modDamage(MarkedBuff.isMarked(buff.owner, event.target) ? 0.2F : 0.4F);
+                event.damage = event.damage.modDamage(MarkedBuff.isMarked(buff.owner, event.target) ? 1.2F : 1.4F);
             }
         }
     }
