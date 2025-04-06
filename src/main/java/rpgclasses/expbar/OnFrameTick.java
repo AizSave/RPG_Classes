@@ -18,26 +18,25 @@ public class OnFrameTick {
             ExpBarManger.movedByInv = !ExpBarManger.movedByInv;
             anyUpdate = true;
         }
-        int newProgressBarsSize = getProgressBarsSize(EventStatusBarManager.getStatusBars());
-        if(ExpBarManger.progressBarsSize != newProgressBarsSize) {
+        boolean newAnyProgressBars = anyProgressBars(EventStatusBarManager.getStatusBars());
+        if(ExpBarManger.anyProgressBars != newAnyProgressBars) {
             anyUpdate = true;
-            ExpBarManger.progressBarsSize = newProgressBarsSize;
+            ExpBarManger.anyProgressBars = newAnyProgressBars;
         }
         if(anyUpdate) {
             ExpBarManger.updateExpBarPosition(mainGameFormManager);
         }
-        ExpBarManger.barForm.setHidden(mainGameFormManager.toolbar.isHidden());
+        ExpBarManger.barForm.setHidden(mainGameFormManager.toolbar.isHidden() || (mainGameFormManager.inventory.isHidden() && newAnyProgressBars));
     }
 
-    public static int getProgressBarsSize(Iterable<?> iterable) {
+    public static boolean anyProgressBars(Iterable<?> iterable) {
         if (iterable instanceof Collection) {
-            return ((Collection<?>) iterable).size();
+            return !((Collection<?>) iterable).isEmpty();
         }
 
-        int count = 0;
         for (Object ignored : iterable) {
-            count++;
+            return true;
         }
-        return count;
+        return false;
     }
 }

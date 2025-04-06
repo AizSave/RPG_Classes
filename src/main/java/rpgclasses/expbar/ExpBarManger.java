@@ -15,7 +15,8 @@ public class ExpBarManger {
     public static float barPercent;
     public static MainGameFormManager mainGameFormManager = null;
     public static boolean movedByInv = false;
-    public static int progressBarsSize = 0;
+    public static boolean anyProgressBars = false;
+    public static boolean vertical = false;
 
     public static void updateExpBar(PlayerData playerData) {
         updateExpBar(playerData.getExpActual(), playerData.getExpNext());
@@ -26,46 +27,16 @@ public class ExpBarManger {
     }
 
     public static void updateExpBarPosition(MainGameFormManager mainGameFormManager) {
-        int midY = WindowManager.getWindow().getHudHeight() / 2;
-        int drawY = mainGameFormManager.toolbar.getY() - 10;
-
-        if (!mainGameFormManager.inventory.isHidden()) {
-            drawY = mainGameFormManager.inventory.getY() - 10;
+        if (mainGameFormManager.inventory.isHidden()) {
+            vertical = false;
+            ExpBarManger.barForm.setPosition(mainGameFormManager.toolbar.getX(), mainGameFormManager.toolbar.getY() - 17);
+            ExpBarManger.barForm.setWidth(408);
+            ExpBarManger.barForm.setHeight(6);
+        } else {
+            vertical = true;
+            ExpBarManger.barForm.setPosition(mainGameFormManager.crafting.getX() + mainGameFormManager.crafting.getWidth() + 11, mainGameFormManager.crafting.getY());
+            ExpBarManger.barForm.setWidth(6);
+            ExpBarManger.barForm.setHeight(mainGameFormManager.crafting.getHeight());
         }
-
-        int n = 0;
-        for (EventStatusBarData statusBar : EventStatusBarManager.getStatusBars()) {
-            if(n == 0) {
-                drawY -= 10;
-            }
-            n++;
-            if (Settings.showBossHealthBars || statusBar.category != EventStatusBarData.BarCategory.boss) {
-                boolean draw = false;
-                Color bufferColor = statusBar.getBufferColor();
-                if (bufferColor != null) {
-                    draw = true;
-                }
-
-                Color fillColor = statusBar.getFillColor();
-                if (fillColor != null) {
-                    draw = true;
-                }
-
-                if (draw) {
-                    drawY -= Settings.UI.healthbar_big_background.getHeight();
-                }
-
-                FairTypeDrawOptions displayNameDrawOptions = statusBar.getDisplayNameDrawOptions();
-                if (displayNameDrawOptions != null) {
-                    drawY -= displayNameDrawOptions.getBoundingBox().height + 2;
-                }
-
-                if (drawY < midY + 100) {
-                    break;
-                }
-            }
-        }
-
-        ExpBarManger.barForm.setPosition(mainGameFormManager.toolbar.getX(), drawY - 7);
     }
 }
