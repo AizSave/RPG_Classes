@@ -35,6 +35,10 @@ public class LevelExtraDrops {
             if (Objects.equals(level.getStringID(), "dungeon")) {
                 chanceMod = 1.5F;
             }
+        } else if (biomeID.equals(BiomeRegistry.PLAINS.getStringID())) {
+            chanceMod = 1.5F;
+        } else if (biomeID.equals(BiomeRegistry.PLAINS_VILLAGE.getStringID())) {
+            chanceMod = 1.5F;
         } else if (biomeID.equals(BiomeRegistry.TEMPLE.getStringID())) {
             chanceMod = 3;
         } else if (biomeID.equals(BiomeRegistry.FOREST_DEEP_CAVE_INCURSION.getStringID())) {

@@ -67,7 +67,7 @@ public class BasicWand extends MagicProjectileToolItem implements ItemInteractAc
 
         Projectile projectile = new BasicWandProjectile(level, attackerMob, attackerMob.x, attackerMob.y, (float) x, (float) y, (float) this.getProjectileVelocity(item, attackerMob), this.getAttackRange(item), this.getAttackDamage(item), this.getKnockback(item, attackerMob));
 
-        if(attackerMob.isPlayer) {
+        if (attackerMob.isPlayer) {
             PlayerMob player = (PlayerMob) attackerMob;
 
             PlayerData playerData = PlayerDataList.getCurrentPlayer(player);

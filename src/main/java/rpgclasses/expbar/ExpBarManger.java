@@ -1,14 +1,7 @@
 package rpgclasses.expbar;
 
-import necesse.engine.Settings;
-import necesse.engine.eventStatusBars.EventStatusBarData;
-import necesse.engine.eventStatusBars.EventStatusBarManager;
-import necesse.engine.window.WindowManager;
-import necesse.gfx.fairType.FairTypeDrawOptions;
 import necesse.gfx.forms.MainGameFormManager;
 import rpgclasses.data.PlayerData;
-
-import java.awt.*;
 
 public class ExpBarManger {
     public static BarForm barForm = null;

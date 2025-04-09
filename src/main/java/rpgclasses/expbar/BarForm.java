@@ -17,26 +17,19 @@ public class BarForm extends Form {
         super.draw(tickManager, perspective, renderBox);
 
         if (ExpBarManger.vertical) {
-            int progress = (int) (ExpBarManger.barPercent * (getHeight() - 6));
+            int filled = (int) (ExpBarManger.barPercent * (getHeight() - 6));
 
-            Renderer.initQuadDraw(getWidth() + 4, 4 + progress)
+            Renderer.initQuadDraw(getWidth() + 4, 4 + filled)
                     .color(0, 0.6F, 0, 0.6F)
-                    .draw(getX() - 2, getY() + getHeight() - progress - 1);
+                    .draw(getX() - 2, getY() + getHeight() - filled - 4);
 
-            Renderer.initQuadDraw(getWidth(), progress)
+            Renderer.initQuadDraw(getWidth(), filled)
                     .color(0, 255, 0)
-                    .draw(getX(), getY() + getHeight() - progress - 3);
-            ;
+                    .draw(getX(), getY() + getHeight() - filled - 3);
         } else {
-            int progress = (int) (ExpBarManger.barPercent * (getHeight() - 6));
-
-            Renderer.initQuadDraw(4 + progress, getHeight() + 4)
-                    .color(0, 0.6F, 0, 0.6F)
-                    .draw(getX() + 1, getY() - 2);
-
-            Renderer.initQuadDraw(progress, getHeight())
-                    .color(0, 255, 0)
-                    .draw(getX() + 3, getY());
+            float filled = ExpBarManger.barPercent * (getWidth() - 6);
+            Renderer.initQuadDraw((int) (4 + filled), getHeight() + 4).color(0, 0.6F, 0, 0.6F).draw(getX() + 1, getY() - 2);
+            Renderer.initQuadDraw((int) filled, getHeight()).color(0, 255, 0).draw(getX() + 3, getY());
         }
     }
 }

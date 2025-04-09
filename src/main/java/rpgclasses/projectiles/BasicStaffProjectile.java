@@ -86,19 +86,19 @@ public class BasicStaffProjectile extends FollowingProjectile {
     }
 
     public void updateTarget() {
-        if(target == null) {
+        if (target == null) {
             target = AphDistances.findClosestMob(getLevel(), x, y, distance,
                     m -> {
-                        if(m.getDistance(this.x, this.y) > distance) {
+                        if (m.getDistance(this.x, this.y) > distance) {
                             return false;
                         }
                         int focus = getOwner().isPlayer ? ((PlayerMob) getOwner()).summonFocusUniqueID : -1;
-                        if(focus != -1) {
+                        if (focus != -1) {
                             return focus == m.getUniqueID();
                         }
                         return this.getOwner().canCollisionHit(m) && m.isHostile;
                     });
-        } else if(target.removed()) {
+        } else if (target.removed()) {
             this.remove();
         }
     }
@@ -106,9 +106,9 @@ public class BasicStaffProjectile extends FollowingProjectile {
     @Override
     public void serverTick() {
         super.serverTick();
-        if(target == null) {
+        if (target == null) {
             dispawnTimer--;
-            if(dispawnTimer < 0) {
+            if (dispawnTimer < 0) {
                 this.remove();
             }
         }
@@ -116,7 +116,7 @@ public class BasicStaffProjectile extends FollowingProjectile {
 
     @Override
     public float tickMovement(float delta) {
-        if(target == null) {
+        if (target == null) {
             this.updateTarget();
             return 0;
         }

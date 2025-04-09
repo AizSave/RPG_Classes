@@ -156,7 +156,7 @@ public class PlayerData {
     }
 
     public int getExpRequiredForLevel(int level, Config config) {
-        return level * config.getFirstExperienceReq() + config.getExperienceReqInc() * (level * (level - 1)) / 2 + config.getSquareExperienceReqInc() * (level * (level - 1) * (2 * level - 1)) / 6 + config.getCubeExperienceReqInc() * (int)Math.pow((double)(level * (level - 1)) / 2, 2);
+        return level * config.getFirstExperienceReq() + config.getExperienceReqInc() * (level * (level - 1)) / 2 + config.getSquareExperienceReqInc() * (level * (level - 1) * (2 * level - 1)) / 6 + config.getCubeExperienceReqInc() * (int) Math.pow((double) (level * (level - 1)) / 2, 2);
     }
 
 
@@ -204,8 +204,8 @@ public class PlayerData {
                 }
             }
 
-            if(haveAtLeastOneAbility(SummonsNerfBuff.evadeNerfSummonsBuffs)) {
-                if(player.buffManager.hasBuff(SummonsNerfBuff.stringID)) {
+            if (haveAtLeastOneAbility(SummonsNerfBuff.evadeNerfSummonsBuffs)) {
+                if (player.buffManager.hasBuff(SummonsNerfBuff.stringID)) {
                     player.buffManager.removeBuff(SummonsNerfBuff.stringID, true);
                 }
             } else {

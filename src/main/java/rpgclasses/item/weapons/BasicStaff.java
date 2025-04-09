@@ -116,7 +116,7 @@ public class BasicStaff extends MagicProjectileToolItem implements ItemInteractA
         if (!attackerMob.isPlayer) {
             return item;
         } else {
-            SummonToolItem.runSummonFocus(level, x, y, (PlayerMob)attackerMob);
+            SummonToolItem.runSummonFocus(level, x, y, (PlayerMob) attackerMob);
             return item;
         }
     }

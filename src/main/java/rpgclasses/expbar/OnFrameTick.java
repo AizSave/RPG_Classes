@@ -11,19 +11,20 @@ import java.util.Collection;
 @ModMethodPatch(target = MainGameFormManager.class, name = "frameTick", arguments = {TickManager.class})
 public class OnFrameTick {
     public static int invOpenMovement;
+
     @Advice.OnMethodExit
     static void onExit(@Advice.This MainGameFormManager mainGameFormManager) {
         boolean anyUpdate = false;
-        if(mainGameFormManager.isInventoryHidden() == ExpBarManger.movedByInv) {
+        if (mainGameFormManager.isInventoryHidden() == ExpBarManger.movedByInv) {
             ExpBarManger.movedByInv = !ExpBarManger.movedByInv;
             anyUpdate = true;
         }
         boolean newAnyProgressBars = anyProgressBars(EventStatusBarManager.getStatusBars());
-        if(ExpBarManger.anyProgressBars != newAnyProgressBars) {
+        if (ExpBarManger.anyProgressBars != newAnyProgressBars) {
             anyUpdate = true;
             ExpBarManger.anyProgressBars = newAnyProgressBars;
         }
-        if(anyUpdate) {
+        if (anyUpdate) {
             ExpBarManger.updateExpBarPosition(mainGameFormManager);
         }
         ExpBarManger.barForm.setHidden(mainGameFormManager.toolbar.isHidden() || (mainGameFormManager.inventory.isHidden() && newAnyProgressBars));

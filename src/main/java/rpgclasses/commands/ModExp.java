@@ -47,5 +47,6 @@ public class ModExp extends ModularChatCommand {
         playerData.modExp(target, amount);
         commandLog.add(String.format("%s's experience modified by %d (%d -> %d) by %s", player.getDisplayName(), amount, previousExp, playerData.getExp(), author));
 
-        target.sendPacket(new UpdateClientDataPacket(target.playerMob.playerName, PlayerDataList.getCurrentPlayer(target.playerMob)));}
+        target.sendPacket(new UpdateClientDataPacket(target.playerMob.playerName, PlayerDataList.getCurrentPlayer(target.playerMob)));
+    }
 }

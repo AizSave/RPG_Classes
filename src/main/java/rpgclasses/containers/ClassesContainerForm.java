@@ -48,7 +48,6 @@ public class ClassesContainerForm extends ContainerFormSwitcher<ClassesContainer
     public ClassesContainerForm(Client client, ClassesContainer container) {
         super(client, container);
 
-        client.tutorial.adventureJournalOpened();
         FormComponentList formComponents = this.addComponent(new FormComponentList());
         this.classesForm = formComponents.addComponent(new Form(925, 500));
         Color breakLineBlackColor = new Color(0, 0, 0);
