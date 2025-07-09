@@ -1,0 +1,383 @@
+[global]
+rpgclasses=§!角色职业系统
+
+[buffmodifiers]
+dodgechance=<mod>% 闪避概率
+
+[rpgclass]
+// 基础职业
+fighter=战士
+rogue=盗贼
+ranger=游箭手
+sorcerer=术士
+summoner=召唤师
+healer=治疗者
+
+// 核心专精
+warrior=武器大师
+barbarian=狂战士
+assassin=刺客大师
+shadow=暗影行者
+sniper=神射手
+beastmaster=兽王统领
+apprentice=魔导学徒
+wizard=大魔导师
+priest=神圣牧师
+paladin=圣骑士
+
+// 基础能力
+endurance=强韧体魄
+fortitude=刚毅不屈
+strength=力量增幅
+recovery=生命复苏
+lethality=致命精准
+swiftness=疾风步法
+quickhands=迅捷手法
+stealth=匿踪潜行
+accuracy=射击精通
+precision=狙击专精
+huntersmark=猎者印记
+manaspring=魔力源泉
+arcanepower=奥术强化
+arcaneprecision=奥术精准
+abundantarmy=军团统御
+leadership=统帅之威
+healing=神圣治愈
+graceful=优雅施法
+
+// 特殊技能
+ironwill=钢铁意志
+armoredflesh=钢铁之躯
+frenziedguard=狂战士守御
+bloodhaste=血怒疾走
+relentlessstrikes=无尽连击
+relentlesschase=穷追猛打
+relentlessevasion=幻影迷踪
+criticaledge=绝命锋刃
+magicranger=魔能箭矢
+plasmagrenade=等离子爆弹
+bowmastery=弓术宗师
+firewand=炎爆法杖
+icewand=冰霜法杖
+thunderwand=雷霆法杖
+overcharge=魔力超载
+firereaction=炎爆反制
+icereaction=冰霜反制
+thunderreaction=雷霆反制
+evasiveinstinct=灵巧本能
+evasivelethality=闪击要害
+healingarea=治愈领域
+sacredjudgment=神圣裁决
+
+[classmessage]
+alreadyunlocked=该能力已解锁
+needsprincipalability=需先解锁职业核心专精
+needsanteriorlevel=需先解锁前置等级
+needsrequiredability=需先解锁前置能力
+lockedbyanotherability=该能力被已解锁的其他能力锁定
+needsmoreaffinity=该职业亲密度不足
+needsmoretalentpoints=天赋点不足
+abilityunlocked=已解锁 <ability> 等级 <level>！
+alreadyprincipalability=已解锁职业核心专精
+newmobkill=首次击杀 <mob> 获得 <exp> 经验
+newlevel=恭喜！你已升到 <level> 级。按下 [input=openclassesmenu] 使用新天赋点！
+talentpointsrestarted=已重置所有天赋选择
+talentpointsrestarted8=已重置最近8项天赋：\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
+talentpointsrestarted3=已重置最近3项天赋：\n- <hab0>\n- <hab1>\n- <hab2>
+talentpointsrestarted1=已重置最后一项天赋：<hab>
+
+[controls]
+openclassesmenu=打开职业菜单
+
+[message]
+dodge=闪避！
+xp=xp
+levelup=等级提升！
+
+[classescontainer]
+affinity=已使用天赋点：<affinity>
+abilityname=<ability> 等级 <level>
+level=等级：<level>
+talentpoints=天赋：<free>/<total>
+experience=经验：<exp>/<nextexp>
+totalexperience=总经验：<exp>
+
+[abilitydescription]
+name=§i<ability>§0 等级 §b<level>
+pointtalentreq=需求天赋点：<points>
+affinityreq=已使用天赋点：<affinity>
+abilityreq=需先解锁 <ability>
+lockedbyanotherabilitysingle=被 <ability> 锁定
+lockedbyanotherabilitylist=被以下能力锁定：
+abilityantreq=§6需先解锁前置等级
+principalabilityreq=§6需先解锁职业核心专精
+alreadyprincipalability=§6已解锁职业核心专精
+clicktounlock=按 [input=mouse1] 解锁
+
+// 专精描述
+warrior_0=+20% 近战与远程伤害\n基于护甲对攻击者反弹伤害\n对远距离攻击者伤害减半\n-50% 法力上限
+barbarian_0=+100% 生命值与生命恢复\n每损失1%生命，近战伤害与移速+1%\n护甲、韧性、法力值始终为0
+
+assassin_0=+50% 近战暴击伤害与10%暴击率\n+20% 闪避概率\n-25% 护甲与生命上限
+shadow_0=-20% 被侦测范围，+30% 移速\n在暗处+50%近战暴伤与20%暴击率\n-25% 护甲与生命上限
+
+sniper_0=+100% 弹道速度\n距离越远远程伤害越高，最高+200%\n-25% 护甲与生命上限
+beastmaster_0=+100% 远程暴击伤害\n召唤狼灵标记敌人5秒\n对标记目标必暴击\n-25% 护甲/生命，-50% 攻速
+
+apprentice_0=+100% 法力上限与恢复\n-50% 护甲，-25% 生命上限
+wizard_0=+200% 法术伤害与法力恢复\n施法无移速惩罚\n+50% 法力消耗，-100% 非魔法伤害\n-50% 护甲/生命/移速
+
+summoner_0=解除召唤物默认削弱：\n> -25% 召唤伤害，上限+0%\n\n-25% 护甲与生命上限
+
+priest_0=+100% 治疗效能\n-50% 护甲与生命上限
+paladin_0=+50% 护甲与受治疗量\n-25% 移速，-50% 攻速
+
+// 基础能力层级描述
+endurance_0=+5 最大生命值\n-1% 承受伤害
+endurance_1=+10 最大生命值\n-2% 承受伤害
+endurance_2=+15 最大生命值\n-3% 承受伤害
+endurance_3=+20 最大生命值\n-4% 承受伤害
+endurance_4=+30 最大生命值\n-6% 承受伤害
+endurance_5=+40 最大生命值\n-8% 承受伤害
+
+fortitude_0=+10% 护甲值
+fortitude_1=+20% 护甲值
+fortitude_2=+30% 护甲值
+fortitude_3=+40% 护甲值
+fortitude_4=+60% 护甲值
+fortitude_5=+80% 护甲值
+
+strength_0=+3% 近战伤害\n+5% 采矿速度
+strength_1=+6% 近战伤害\n+10% 采矿速度
+strength_2=+9% 近战伤害\n+15% 采矿速度
+strength_3=+12% 近战伤害\n+20% 采矿速度
+strength_4=+18% 近战伤害\n+30% 采矿速度
+strength_5=+24% 近战伤害\n+40% 采矿速度
+
+recovery_0=脱战时+10% 生命恢复\n战斗中+5% 生命恢复
+recovery_1=脱战时+20% 生命恢复\n战斗中+10% 生命恢复
+recovery_2=脱战时+30% 生命恢复\n战斗中+15% 生命恢复
+recovery_3=脱战时+40% 生命恢复\n战斗中+20% 生命恢复
+recovery_4=脱战时+60% 生命恢复\n战斗中+30% 生命恢复
+recovery_5=脱战时+80% 生命恢复\n战斗中+40% 生命恢复
+
+lethality_0=+2% 暴击率\n+5% 近战暴击伤害
+lethality_1=+4% 暴击率\n+10% 近战暴击伤害
+lethality_2=+6% 暴击率\n+15% 近战暴击伤害
+lethality_3=+8% 暴击率\n+20% 近战暴击伤害
+lethality_4=+12% 暴击率\n+30% 近战暴击伤害
+lethality_5=+16% 暴击率\n+40% 近战暴击伤害
+
+swiftness_0=+3% 移动速度\n+3% 闪避概率
+swiftness_1=+6% 移动速度\n+6% 闪避概率
+swiftness_2=+9% 移动速度\n+9% 闪避概率
+swiftness_3=+12% 移动速度\n+12% 闪避概率
+swiftness_4=+18% 移动速度\n+18% 闪避概率
+swiftness_5=+24% 移动速度\n+24% 闪避概率
+
+quickhands_0=+5% 攻击速度\n+10% 投掷物速度
+quickhands_1=+10% 攻击速度\n+20% 投掷物速度
+quickhands_2=+15% 攻击速度\n+30% 投掷物速度
+quickhands_3=+20% 攻击速度\n+40% 投掷物速度
+quickhands_4=+30% 攻击速度\n+60% 投掷物速度
+quickhands_5=+40% 攻击速度\n+80% 投掷物速度
+
+stealth_0=-5% 被侦测范围
+stealth_1=-10% 被侦测范围
+stealth_2=-15% 被侦测范围
+stealth_3=-20% 被侦测范围
+stealth_4=-30% 被侦测范围
+stealth_5=-40% 被侦测范围
+
+accuracy_0=+3% 远程伤害\n+5% 弹道速度
+accuracy_1=+6% 远程伤害\n+10% 弹道速度
+accuracy_2=+9% 远程伤害\n+15% 弹道速度
+accuracy_3=+12% 远程伤害\n+20% 弹道速度
+accuracy_4=+18% 远程伤害\n+30% 弹道速度
+accuracy_5=+24% 远程伤害\n+40% 弹道速度
+
+precision_0=+2% 暴击率\n+5% 远程暴击伤害
+precision_1=+4% 暴击率\n+10% 远程暴击伤害
+precision_2=+6% 暴击率\n+15% 远程暴击伤害
+precision_3=+8% 暴击率\n+20% 远程暴击伤害
+precision_4=+12% 暴击率\n+30% 远程暴击伤害
+precision_5=+16% 暴击率\n+40% 远程暴击伤害
+
+huntersmark_0=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+10%伤害
+huntersmark_1=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+20%伤害
+huntersmark_2=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+30%伤害
+huntersmark_3=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+40%伤害
+huntersmark_4=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+60%伤害
+huntersmark_5=远程攻击标记敌人5秒\n冷却：5秒\n对标记目标+80%伤害
+
+manaspring_0=+5 法力上限\n-3% 法力消耗
+manaspring_1=+10 法力上限\n-6% 法力消耗
+manaspring_2=+15 法力上限\n-9% 法力消耗
+manaspring_3=+20 法力上限\n-12% 法力消耗
+manaspring_4=+30 法力上限\n-18% 法力消耗
+manaspring_5=+40 法力上限\n-24% 法力消耗
+
+arcanepower_0=+3% 法术伤害\n+5% 法力恢复
+arcanepower_1=+6% 法术伤害\n+10% 法力恢复
+arcanepower_2=+9% 法术伤害\n+15% 法力恢复
+arcanepower_3=+12% 法术伤害\n+20% 法力恢复
+arcanepower_4=+18% 法术伤害\n+30% 法力恢复
+arcanepower_5=+24% 法术伤害\n+40% 法力恢复
+
+arcaneprecision_0=+2% 暴击率\n+5% 法术暴击伤害
+arcaneprecision_1=+4% 暴击率\n+10% 法术暴击伤害
+arcaneprecision_2=+6% 暴击率\n+15% 法术暴击伤害
+arcaneprecision_3=+8% 暴击率\n+20% 法术暴击伤害
+arcaneprecision_4=+12% 暴击率\n+30% 法术暴击伤害
+arcaneprecision_5=+16% 暴击率\n+40% 法术暴击伤害
+
+abundantarmy_0=+1 最大召唤物数量
+abundantarmy_1=+2 最大召唤物数量
+abundantarmy_2=+3 最大召唤物数量
+abundantarmy_3=+4 最大召唤物数量
+abundantarmy_4=+5 最大召唤物数量
+abundantarmy_5=+6 最大召唤物数量
+
+leadership_0=+5% 召唤物移速与攻速
+leadership_1=+10% 召唤物移速\n+10召唤物攻速
+leadership_2=+15% 召唤物移速\n+15%召唤物攻速
+leadership_3=+20% 召唤物移速\n+20%召唤物攻速
+leadership_4=+30% 召唤物移速\n+30%召唤物攻速
+leadership_5=+40% 召唤物移速\n+40%召唤物攻速
+leadership_6=+50% 召唤物移速\n+50%召唤物攻速
+leadership_7=+60% 召唤物移速\n+60%召唤物攻速
+leadership_8=+70% 召唤物移速\n+70%召唤物攻速
+leadership_9=+80% 召唤物移速\n+80%召唤物攻速
+leadership_10=+90% 召唤物移速\n+90%召唤物攻速
+leadership_11=+100% 召唤物移速\n+100%召唤物攻速
+
+healing_0=+5% 治疗效能
+healing_1=+10% 治疗效能
+healing_2=+15% 治疗效能
+healing_3=+20% 治疗效能
+healing_4=+30% 治疗效能
+healing_5=+40% 治疗效能
+healing_6=+50% 治疗效能
+healing_7=+60% 治疗效能
+healing_8=+70% 治疗效能
+healing_9=+80% 治疗效能
+healing_10=+90% 治疗效能
+healing_11=+100% 治疗效能
+
+graceful_0=+5% 治疗增益效果
+graceful_1=+10% 治疗增益效果
+graceful_2=+15% 治疗增益效果
+graceful_3=+20% 治疗增益效果
+graceful_4=+30% 治疗增益效果
+graceful_5=+40% 治疗增益效果
+
+
+// 特殊技能
+ironwill_0=战斗中每秒恢复0.5生命值
+ironwill_1=战斗中每秒恢复1生命值
+ironwill_2=战斗中每秒恢复2生命值
+
+armoredflesh_0=受到致命伤害时保留1点生命并无敌5秒\n冷却时间：90秒
+armoredflesh_1=受到致命伤害时保留1点生命并无敌5秒\n冷却时间：60秒
+armoredflesh_2=受到致命伤害时保留1点生命并无敌5秒\n冷却时间：30秒
+
+frenziedguard_0=近战命中后3秒内减伤15%
+frenziedguard_1=近战命中后3秒内减伤15%\n最多叠加2层
+frenziedguard_2=近战命中后5秒内减伤15%\n最多叠加3层
+
+bloodhaste_0=每损失1%生命，移速提升0.15%
+bloodhaste_1=每损失1%生命，移速提升0.3%
+bloodhaste_2=每损失1%生命，移速提升0.6%
+
+relentlessstrikes_0=近战命中后+10%攻速持续2秒\n最多叠加2层
+relentlessstrikes_1=近战命中后+10%攻速持续2秒\n最多叠加4层
+relentlessstrikes_2=近战命中后+10%攻速持续2秒\n最多叠加8层
+
+relentlesschase_0=近战命中后+10%移速持续2秒\n最多叠加2层
+relentlesschase_1=近战命中后+10%移速持续2秒\n最多叠加4层
+relentlesschase_2=近战命中后+10%移速持续2秒\n最多叠加8层
+
+relentlessevasion_0=近战命中后+3%闪避率持续2秒\n最多叠加2层
+relentlessevasion_1=近战命中后+3%闪避率持续2秒\n最多叠加4层
+relentlessevasion_2=近战命中后+3%闪避率持续2秒\n最多叠加8层
+
+criticaledge_0=每损失1%生命，暴击率+0.2%
+criticaledge_1=每损失1%生命，暴击率+0.4%
+criticaledge_2=每损失1%生命，暴击率+0.8%
+
+evasiveinstinct_0=成功闪避后移速+15%持续5秒
+evasiveinstinct_1=成功闪避后移速+30%持续5秒
+evasiveinstinct_2=成功闪避后移速+60%持续5秒
+
+evasivelethality_0=成功闪避后暴击率+10%持续5秒
+evasivelethality_1=成功闪避后暴击率+20%持续5秒
+evasivelethality_2=成功闪避后暴击率+40%持续5秒
+
+magicranger_0=远程攻击消耗2法力值，造成+20%伤害\n若目标被标记则额外+40%伤害\n需保持法力值高于50%
+magicranger_1=远程攻击消耗1法力值，造成+20%伤害\n若目标被标记则额外+40%伤害\n需保持法力值高于50%
+magicranger_2=远程攻击消耗0.5法力值，造成+20%伤害\n若目标被标记则额外+40%伤害\n需保持法力值高于50%
+
+plasmagrenade_0=每8次射击发射追踪爆弹\n优先攻击标记目标\n伤害为原弹药的50%
+plasmagrenade_1=每8次射击发射追踪爆弹\n优先攻击标记目标\n伤害与原弹药相同
+plasmagrenade_2=每8次射击发射追踪爆弹\n优先攻击标记目标\n伤害为原弹药的200%
+
+bowmastery_0=拉弓时向最近标记目标发射凝胶箭\n冷却：4秒
+bowmastery_1=拉弓时向最近标记目标发射凝胶箭\n冷却：2秒
+bowmastery_2=拉弓时向最近标记目标发射凝胶箭\n冷却：1秒
+
+firewand_0=将基础法杖攻击替换为炎爆术\n最多造成目标50%最大生命值伤害\n冷却：24秒\n对人类与首领伤害大幅降低
+firewand_1=将基础法杖攻击替换为炎爆术\n最多造成目标50%最大生命值伤害\n冷却：12秒\n对人类与首领伤害大幅降低
+firewand_2=将基础法杖攻击替换为炎爆术\n最多造成目标50%最大生命值伤害\n冷却：6秒\n对人类与首领伤害大幅降低
+firewand_3=将基础法杖攻击替换为炎爆术\n最多造成目标50%最大生命值伤害\n冷却：4秒\n对人类与首领伤害大幅降低
+
+icewand_0=将基础法杖攻击替换为寒冰冲击\n冻结敌人5秒\n冷却：24秒
+icewand_1=将基础法杖攻击替换为寒冰冲击\n冻结敌人5秒\n冷却：12秒
+icewand_2=将基础法杖攻击替换为寒冰冲击\n冻结敌人5秒\n冷却：6秒
+icewand_3=将基础法杖攻击替换为寒冰冲击\n冻结敌人5秒\n冷却：4秒
+
+thunderwand_0=将基础法杖攻击替换为雷霆轰击\n造成20%最大生命值伤害并眩晕2秒\n冷却：24秒\n对人类无效且不作用于首领
+thunderwand_1=将基础法杖攻击替换为雷霆轰击\n造成20%最大生命值伤害并眩晕2秒\n冷却：12秒\n对人类无效且不作用于首领
+thunderwand_2=将基础法杖攻击替换为雷霆轰击\n造成20%最大生命值伤害并眩晕2秒\n冷却：6秒\n对人类无效且不作用于首领
+thunderwand_3=将基础法杖攻击替换为雷霆轰击\n造成20%最大生命值伤害并眩晕2秒\n冷却：4秒\n对人类无效且不作用于首领
+
+overcharge_0=根据当前法力值提升法术伤害\n满法力时最多+20%伤害
+overcharge_1=根据当前法力值提升法术伤害\n满法力时最多+40%伤害
+overcharge_2=根据当前法力值提升法术伤害\n满法力时最多+80%伤害
+
+firereaction_0=受击时触发炎爆术效果\n冷却：16秒
+firereaction_1=受击时触发炎爆术效果\n冷却：8秒
+firereaction_2=受击时触发炎爆术效果\n冷却：4秒
+
+icereaction_0=受击时触发寒冰冲击效果\n冷却：16秒
+icereaction_1=受击时触发寒冰冲击效果\n冷却：8秒
+icereaction_2=受击时触发寒冰冲击效果\n冷却：4秒
+
+thunderreaction_0=受击时触发雷霆轰击效果\n冷却：16秒
+thunderreaction_1=受击时触发雷霆轰击效果\n冷却：8秒
+thunderreaction_2=受击时触发雷霆轰击效果\n冷却：4秒
+
+healingarea_0=每12秒生成治疗领域\n为范围内友方恢复2%最大生命值\n治疗效果受魔法治疗加成
+healingarea_1=每9秒生成治疗领域\n为范围内友方恢复2%最大生命值\n治疗效果受魔法治疗加成
+healingarea_2=每6秒生成治疗领域\n为范围内友方恢复2%最大生命值\n治疗效果受魔法治疗加成
+healingarea_3=每3秒生成治疗领域\n为范围内友方恢复2%最大生命值\n治疗效果受魔法治疗加成
+
+sacredjudgment_0=根据3秒内治疗量提升伤害\n每点治疗量+1%伤害，上限30%
+sacredjudgment_1=根据3秒内治疗量提升伤害\n每点治疗量+1%伤害，上限60%
+sacredjudgment_2=根据3秒内治疗量提升伤害\n每点治疗量+2%伤害，上限120%
+
+
+
+[item]
+basicwand=见习法杖
+basicstaff=见习长杖
+scrollofoblivion=遗忘卷轴
+tomeofoblivion=遗忘典籍
+codexofoblivion=遗忘法典
+grimoireofoblivion=遗忘圣典
+
+[itemtooltips]
+taltentpointsrefund=重置天赋点以供重新分配
+scrollofoblivion=遗忘最后选择的天赋
+tomeofoblivion=遗忘最近3项天赋
+codexofoblivion=遗忘最近8项天赋
+grimoireofoblivion=遗忘全部已选天赋

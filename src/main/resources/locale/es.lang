@@ -1,0 +1,392 @@
+# Translation made by Save (https://steamcommunity.com/id/Aiz_Save/)
+
+[global]
+rpgclasses=§!RPG Classes
+
+
+[buffmodifiers]
+dodgechance=<mod>% prob. de Evasión
+
+
+[rpgclass]
+
+// Classes
+fighter=Luchador
+rogue=Pícaro
+ranger=Explorador
+sorcerer=Hechicero
+summoner=Invocador
+healer=Curandero
+
+// Principal Abilities
+warrior=Guerrero
+barbarian=Bárbaro
+assassin=Asesino
+shadow=Sombra
+sniper=Tirador
+beastmaster=Maestro de las Bestias
+apprentice=Aprendiz
+wizard=Mago
+priest=Clérigo
+paladin=Paladín
+
+// Basic Abilities
+endurance=Resistencia
+fortitude=Fortaleza
+strength=Fuerza
+recovery=Recuperación
+lethality=Letalidad
+swiftness=Rapidez
+quickhands=Manos Rápidas
+stealth=Sigilo
+accuracy=Exactitud
+precision=Precisión
+huntersmark=Marca del Cazador
+manaspring=Fuente de Maná
+arcanepower=Poder Arcano
+arcaneprecision=Precisión Arcana
+abundantarmy=Gran Armada
+leadership=Liderazgo
+healing=Curación
+graceful=Gracia Divina
+
+// Abilities
+ironwill=Voluntad de Hierro
+armoredflesh=Piel Blindada
+frenziedguard=Guardia Furiosa
+bloodhaste=Precipitación Sangrienta
+relentlessstrikes=Ataques Incesantes
+relentlesschase=Caza Incesante
+relentlessevasion=Evasión Incesante
+criticaledge=Ventaja Crítica
+magicranger=Explorador Mágico
+plasmagrenade=Granada de Plasma
+bowmastery=Maestría en Arcos
+firewand=Varita de Fuego
+icewand=Varita de Hielo
+thunderwand=Varita del Trueno
+overcharge=Sobrecarga
+firereaction=Reacción de Fuego
+icereaction=Reacción de Hielo
+thunderreaction=Reacción del Trueno
+evasiveinstinct=Instinto Evasivo
+evasivelethality=Letalidad Evasiva
+healingarea=Área Curativa
+sacredjudgment=Juicio Sagrado
+
+
+[classmessage]
+alreadyunlocked=Esta habilidad ya está desbloqueada
+needsprincipalability=Debes desbloquear antes una habilidad principal de la clase
+needsanteriorlevel=Debes desbloquear antes el anterior nivel de esta habilidad
+needsrequiredability=Debes desbloquear antes la habilidad requerida
+lockedbyanotherability=Esta habilidad está bloqueada por otra habilidad que tienes
+needsmoreaffinity=No tienes suficiente afinidad en esta clase
+needsmoretalentpoints=Necesitas más Puntos de Talento para desbloquear esta habilidad
+abilityunlocked=Has desbloqueado la habilidad <ability> nivel <level>!
+alreadyprincipalability=Ya has already unlocked a class's principal ability
+newmobkill=Has ganado <exp> de experiencia por derrotar a <mob> por primera vez
+newlevel=Enhorabuena! Has llegado a nivel <level>. Presiona [input=openclassesmenu] para usar tu nuevo Punto de Talento!
+talentpointsrestarted=Has olvidado todas tus habilidades
+talentpointsrestarted8==Has olvidado tus últimas 8 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
+talentpointsrestarted3==Has olvidado tus últimas 3 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>
+talentpointsrestarted1==Has olvidado tu última habilidad: <hab>
+
+
+[controls]
+openclassesmenu=Abre el Menú de Clases
+
+
+[message]
+dodge=Evasión!
+xp=XP
+levelup=Level Up!
+
+
+[classescontainer]
+affinity=Afinidad <affinity>
+abilityname=<ability> nivel <level>
+level=Level: <level>
+talentpoints=Talento: <free> / <total>
+experience=EXP: <exp> / <nextexp>
+totalexperience=EXP Total: <exp>
+
+
+[abilitydescription]
+name=§i<ability>§0 nivel §b<level>
+pointtalentreq=Puntos de Talento: <points>
+affinityreq=Afinidad: <affinity>
+abilityreq=Requiere la habilidad <ability>
+lockedbyanotherabilitysingle=Bloqueada por <ability>
+lockedbyanotherabilitylist=Bloqueada por las habilidades:
+abilityantreq=§6Requiere el nivel anterior
+principalabilityreq=§6Require una hab principal de la clase
+alreadyprincipalability=§6Ya has desbloqueado una hab principal de la clase
+clicktounlock=[input=mouse1] para desbloquear
+
+// Subclasses
+warrior_0=+20% daño Melee y Range\nDaña a quien te ataque según tu vida\nMitad de daño a enemigos alejados\n-50% Maná
+barbarian_0=+100% Total Vida y Vida Regen\nAumenta Daño Melee y velocidad atacando\nen +1% por cada 1% de Vida perdida\nTu armadura, resiliencia y mana serán 0
+
+assassin_0=+50% Daño Crítico Melee y +10% Prob. de Crítico\n+20% Evasión\n-25% Armadura y -25% Vida Máx
+shadow_0=-20% Rango de Detección y +30% Velocidad\n+50% Daño Crítico Melee en lugares oscuros\n+20% Prob. de Crítico en lugares oscuros\n-25% Armadura y -25% Vida Máx
+
+sniper_0=+100% Vel. de Proyectil\nAumenta el Daño Range conforme más lejos\nestés del enemigo hasta +200%\n-25% Armadura y -25% Vida Máx
+beastmaster_0=+100% Daño Crítico Range\nTu amigo lobo marca 5 segundos a los enemigos\n100% prob. de círito a enemigos marcados\n-25% Armadura, -25% Vida Máx, -50% Vel. de Ataque
+
+apprentice_0=+100% Maná Máx, +100% Regen. de Maná\n-50% Armadura y -25% Vida Máx
+wizard_0=+200% Daño Mágico, +100% Regen. de Maná\nNo penalización de movimiento al atacar\n+50% Uso de Maná, -100% to all Daño no Mágico\n-50% Armadura, -50% Vida Máx, -50% Velocidad
+
+summoner_0=Evita el nerf predeterminado en las invocaciones:\n> -25% de Daño de Invocación, limitado a +0%\n\n-25% de Armadura, -25% de Vida Máx
+
+priest_0=+100% Curación Mágica\n-50% Armadura y -50% Vida Máx
+paladin_0=+50% Armadura, +50% Curación Mágica Recibida\n-25% Velocidad, -50% Vel. de Ataque
+
+// Basic Abilities
+endurance_0=+5 Vida Máx\n-1% Daño Recibido
+endurance_1=+10 Vida Máx\n-2% Daño Recibido
+endurance_2=+15 Vida Máx\n-3% Daño Recibido
+endurance_3=+20 Vida Máx\n-4% Daño Recibido
+endurance_4=+30 Vida Máx\n-6% Daño Recibido
+endurance_5=+40 Vida Máx\n-8% Daño Recibido
+
+fortitude_0=+10% Armadura
+fortitude_1=+20% Armadura
+fortitude_2=+30% Armadura
+fortitude_3=+40% Armadura
+fortitude_4=+60% Armadura
+fortitude_5=+80% Armadura
+
+strength_0=+3% Daño Melee\n+5% Velocidad de Minería
+strength_1=+6% Daño Melee\n+10% Velocidad de Minería
+strength_2=+9% Daño Melee\n+15% Velocidad de Minería
+strength_3=+12% Daño Melee\n+20% Velocidad de Minería
+strength_4=+18% Daño Melee\n+30% Velocidad de Minería
+strength_5=+24% Daño Melee\n+40% Velocidad de Minería
+
+recovery_0=+10% Regen. de Vida (fuera de combate)\n+5% Regen. de Vida (dentro de combate)
+recovery_1=+20% Regen. de Vida (fuera de combate)\n+10% Regen. de Vida (dentro de combate)
+recovery_2=+30% Regen. de Vida (fuera de combate)\n+15% Regen. de Vida (dentro de combate)
+recovery_3=+40% Regen. de Vida (fuera de combate)\n+20% Regen. de Vida (dentro de combate)
+recovery_4=+60% Regen. de Vida (fuera de combate)\n+30% Regen. de Vida (dentro de combate)
+recovery_5=+80% Regen. de Vida (fuera de combate)\n+40% Regen. de Vida (dentro de combate)
+
+lethality_0=+2% Prob. de Crítico\n+5% Daño Crítico Melee
+lethality_1=+4% Prob. de Crítico\n+10% Daño Crítico Melee
+lethality_2=+6% Prob. de Crítico\n+15% Daño Crítico Melee
+lethality_3=+8% Prob. de Crítico\n+20% Daño Crítico Melee
+lethality_4=+12% Prob. de Crítico\n+30% Daño Crítico Melee
+lethality_5=+16% Prob. de Crítico\n+40% Daño Crítico Melee
+
+swiftness_0=+3% Velocidad\n+3% Evasión
+swiftness_1=+6% Velocidad\n+6% Evasión
+swiftness_2=+9% Velocidad\n+9% Evasión
+swiftness_3=+12% Velocidad\n+12% Evasión
+swiftness_4=+18% Velocidad\n+18% Evasión
+swiftness_5=+24% Velocidad\n+24% Evasión
+
+quickhands_0=+5% Vel. de Ataque\n+10% Vel. de Lanzamiento
+quickhands_1=+10% Vel. de Ataque\n+20% Vel. de Lanzamiento
+quickhands_2=+15% Vel. de Ataque\n+30% Vel. de Lanzamiento
+quickhands_3=+20% Vel. de Ataque\n+40% Vel. de Lanzamiento
+quickhands_4=+30% Vel. de Ataque\n+60% Vel. de Lanzamiento
+quickhands_5=+40% Vel. de Ataque\n+80% Vel. de Lanzamiento
+
+stealth_0=-5% Rango de Detección
+stealth_1=-10% Rango de Detección
+stealth_2=-15% Rango de Detección
+stealth_3=-20% Rango de Detección
+stealth_4=-30% Rango de Detección
+stealth_5=-40% Rango de Detección
+
+accuracy_0=+3% Daño Range\n+5% Vel. de Proyectil
+accuracy_1=+6% Daño Range\n+10% Vel. de Proyectil
+accuracy_2=+9% Daño Range\n+15% Vel. de Proyectil
+accuracy_3=+12% Daño Range\n+20% Vel. de Proyectil
+accuracy_4=+18% Daño Range\n+30% Vel. de Proyectil
+accuracy_5=+24% Daño Range\n+40% Vel. de Proyectil
+
+precision_0=+2% Prob. de Crítico\n+5% Daño Crítico Range
+precision_1=+4% Prob. de Crítico\n+10% Daño Crítico Range
+precision_2=+6% Prob. de Crítico\n+15% Daño Crítico Range
+precision_3=+8% Prob. de Crítico\n+20% Daño Crítico Range
+precision_4=+12% Prob. de Crítico\n+30% Daño Crítico Range
+precision_5=+16% Prob. de Crítico\n+40% Daño Crítico Range
+
+huntersmark_0=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+10% Daño a Enemigos Marcados
+huntersmark_1=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+20% Daño a Enemigos Marcados
+huntersmark_2=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+30% Daño a Enemigos Marcados
+huntersmark_3=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+40% Daño a Enemigos Marcados
+huntersmark_4=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+60% Daño a Enemigos Marcados
+huntersmark_5=Ataques Range marcarán al enemigo por 5 segundos\nCooldown: 5 segundos\n+80% Daño a Enemigos Marcados
+
+manaspring_0=+5 Maná Máx\n-3% Uso de Maná
+manaspring_1=+10 Maná Máx\n-6% Uso de Maná
+manaspring_2=+15 Maná Máx\n-9% Uso de Maná
+manaspring_3=+20 Maná Máx\n-12% Uso de Maná
+manaspring_4=+30 Maná Máx\n-18% Uso de Maná
+manaspring_5=+40 Maná Máx\n-24% Uso de Maná
+
+arcanepower_0=+3% Daño Mágico\n+5% Regen. de Maná
+arcanepower_1=+6% Daño Mágico\n+10% Regen. de Maná
+arcanepower_2=+9% Daño Mágico\n+15% Regen. de Maná
+arcanepower_3=+12% Daño Mágico\n+20% Regen. de Maná
+arcanepower_4=+18% Daño Mágico\n+30% Regen. de Maná
+arcanepower_5=+24% Daño Mágico\n+40% Regen. de Maná
+
+arcaneprecision_0=+2% Prob. de Crítico\n+5% Daño Crítico Mágico
+arcaneprecision_1=+4% Prob. de Crítico\n+10% Daño Crítico Mágico
+arcaneprecision_2=+6% Prob. de Crítico\n+15% Daño Crítico Mágico
+arcaneprecision_3=+8% Prob. de Crítico\n+20% Daño Crítico Mágico
+arcaneprecision_4=+12% Prob. de Crítico\n+30% Daño Crítico Mágico
+arcaneprecision_5=+16% Prob. de Crítico\n+40% Daño Crítico Mágico
+
+abundantarmy_0=+1 Invocación Máx
+abundantarmy_1=+2 Invocaciones Máx
+abundantarmy_2=+3 Invocaciones Máx
+abundantarmy_3=+4 Invocaciones Máx
+abundantarmy_4=+5 Invocaciones Máx
+abundantarmy_5=+6 Invocaciones Máx
+
+leadership_0=+5% Vel. de Invocaciones\n+5% Vel. de Ataque de Invocaciones
+leadership_1=+10% Vel. de Invocaciones\n+10% Vel. de Ataque de Invocaciones
+leadership_2=+15% Vel. de Invocaciones\n+15% Vel. de Ataque de Invocaciones
+leadership_3=+20% Vel. de Invocaciones\n+20% Vel. de Ataque de Invocaciones
+leadership_4=+30% Vel. de Invocaciones\n+30% Vel. de Ataque de Invocaciones
+leadership_5=+40% Vel. de Invocaciones\n+40% Vel. de Ataque de Invocaciones
+leadership_6=+50% Vel. de Invocaciones\n+50% Vel. de Ataque de Invocaciones
+leadership_7=+60% Vel. de Invocaciones\n+60% Vel. de Ataque de Invocaciones
+leadership_8=+70% Vel. de Invocaciones\n+70% Vel. de Ataque de Invocaciones
+leadership_9=+80% Vel. de Invocaciones\n+80% Vel. de Ataque de Invocaciones
+leadership_10=+90% Vel. de Invocaciones\n+90% Vel. de Ataque de Invocaciones
+leadership_11=+100% Vel. de Invocaciones\n+100% Vel. de Ataque de Invocaciones
+
+healing_0=+5% Curación Mágica
+healing_1=+10% Curación Mágica
+healing_2=+15% Curación Mágica
+healing_3=+20% Curación Mágica
+healing_4=+30% Curación Mágica
+healing_5=+40% Curación Mágica
+healing_6=+50% Curación Mágica
+healing_7=+60% Curación Mágica
+healing_8=+70% Curación Mágica
+healing_9=+80% Curación Mágica
+healing_10=+90% Curación Mágica
+healing_11=+100% Curación Mágica
+
+graceful_0=+5% Gracia Curación Mágica
+graceful_1=+10% Gracia Curación Mágica
+graceful_2=+15% Gracia Curación Mágica
+graceful_3=+20% Gracia Curación Mágica
+graceful_4=+30% Gracia Curación Mágica
+graceful_5=+40% Gracia Curación Mágica
+
+// Abilities
+ironwill_0=Regenera 0.5 de vida por segundo durante los combates
+ironwill_1=Regenera 1 de vida por segundo durante los combates
+ironwill_2=Regenera 2 de vida por segundo durante los combates
+
+armoredflesh_0=Al recibir un ataque mortal, te mantendrás a 1 de Vida\ny te volverás inmortal por 5 segundos\nCooldown: 90 segundos
+armoredflesh_1=Al recibir un ataque mortal, te mantendrás a 1 de Vida\ny te volverás inmortal por 5 segundos\nCooldown: 60 segundos
+armoredflesh_2=Al recibir un ataque mortal, te mantendrás a 1 de Vida\ny te volverás inmortal por 5 segundos\nCooldown: 30 segundos
+
+frenziedguard_0=-15% Daño recibido por 3 segundos luego de acertar un ataque Melee
+frenziedguard_1=-15% Daño recibido por 3 segundos luego de acertar un ataque Melee\nSe acumula hasta 2 veces
+frenziedguard_2=-15% Daño recibido por 5 segundos luego de acertar un ataque Melee\nSe acumula hasta 3 veces
+
+bloodhaste_0=Aumenta tu Velocidad by +0.15% por cada 1% de Vida perdida
+bloodhaste_1=Aumenta tu Velocidad by +0.3% por cada 1% de Vida perdida
+bloodhaste_2=Aumenta tu Velocidad by +0.6% por cada 1% de Vida perdida
+
+relentlessstrikes_0=Acertar un ataque a corta distancia otorga +10% de Vel. de Ataque por 2 segundos\nSe acumula hasta 2 veces
+relentlessstrikes_1=Acertar un ataque a corta distancia otorga +10% de Vel. de Ataque por 2 segundos\nSe acumula hasta 4 veces
+relentlessstrikes_2=Acertar un ataque a corta distancia otorga +10% de Vel. de Ataque por 2 segundos\nSe acumula hasta 8 veces
+
+relentlesschase_0=Acertar un ataque a corta distancia otorga +10% de Velocidad por 2 segundos\nSe acumula hasta 2 veces
+relentlesschase_1=Acertar un ataque a corta distancia otorga +10% de Velocidad por 2 segundos\nSe acumula hasta 4 veces
+relentlesschase_2=Acertar un ataque a corta distancia otorga +10% de Velocidad por 2 segundos\nSe acumula hasta 8 veces
+
+relentlessevasion_0=Acertar un ataque a corta distancia otorga +3% de Evasión por 2 segundos\nSe acumula hasta 2 veces
+relentlessevasion_1=Acertar un ataque a corta distancia otorga +3% de Evasión por 2 segundos\nSe acumula hasta 4 veces
+relentlessevasion_2=Acertar un ataque a corta distancia otorga +3% de Evasión por 2 segundos\nSe acumula hasta 8 veces
+
+criticaledge_0=Aumenta tu Prob. de Crítico en +0.2% por cada 1% de Vida perdida
+criticaledge_1=Aumenta tu Prob. de Crítico en +0.4% por cada 1% de Vida perdida
+criticaledge_2=Aumenta tu Prob. de Crítico en +0.8% por cada 1% de Vida perdida
+
+evasiveinstinct_0=Esquivar un ataque aumenta tu Velocidad en 15% por 5 segundos
+evasiveinstinct_1=Esquivar un ataque aumenta tu Velocidad en 30% por 5 segundos
+evasiveinstinct_2=Esquivar un ataque aumenta tu Velocidad en 60% por 5 segundos
+
+evasivelethality_0=Esquivar un ataque aumenta tu Prob. de Crítico en 10% por 5 segundos
+evasivelethality_1=Esquivar un ataque aumenta tu Prob. de Crítico en 20% por 5 segundos
+evasivelethality_2=Esquivar un ataque aumenta tu Prob. de Crítico en 40% por 5 segundos
+
+magicranger_0=Al dañar a un enemigo con ataque Range, perderás 2 de maná a cambio\nde +20% daño en el ataque. +40% daño si está marcado\nSolo funciona si tienes más de la mitad de tu maná
+magicranger_1=Al dañar a un enemigo con ataque Range, perderás 1 de maná a cambio\nde +20% daño en el ataque. +40% daño si está marcado\nSolo funciona si tienes más de la mitad de tu maná
+magicranger_2=Al dañar a un enemigo con ataque Range, perderás 0.5 de maná a cambio\nde +20% daño en el ataque. +40% daño si está marcado\nSolo funciona si tienes más de la mitad de tu maná
+
+plasmagrenade_0=Cada 8 disparos, dispara un proyectil explosivo guiado\nEl proyectil cazará enemigos cercanos\nEl daño es la mitad del original del proyectil
+plasmagrenade_1=Cada 8 disparos, dispara un proyectil explosivo guiado\nEl proyectil cazará enemigos cercanos\nEl daño es el original del proyectil
+plasmagrenade_2=Cada 8 disparos, dispara un proyectil explosivo guiado\nEl proyectil cazará enemigos cercanos\nEl daño es x2 el original del proyectil
+
+bowmastery_0=Libera una Flecha de Gel Inestable al atacar con un arco, en la dirección del\nenemigo marcado más cercano. Cooldown: 4 segundos
+bowmastery_1=Libera una Flecha de Gel Inestable al atacar con un arco, en la dirección del\nenemigo marcado más cercano. Cooldown: 2 segundos
+bowmastery_2=Libera una Flecha de Gel Inestable al atacar con un arco, en la dirección del\nenemigo marcado más cercano. Cooldown: 1 segundos
+
+firewand_0=Transforma un ataque de tu Varita Básica en una bola de fuego explosiva,\ndealing up to 50% of their vida máx as daño. Cooldown: 24 segundos\nEl daño es reducido contra humanos y aún más contra bosses
+firewand_1=Transforma un ataque de tu Varita Básica en una bola de fuego explosiva,\ndealing up to 50% of their vida máx as daño. Cooldown: 12 segundos\nEl daño es reducido contra humanos y aún más contra bosses
+firewand_2=Transforma un ataque de tu Varita Básica en una bola de fuego explosiva,\ndealing up to 50% of their vida máx as daño. Cooldown: 6 segundos\nEl daño es reducido contra humanos y aún más contra bosses
+firewand_3=Transforma un ataque de tu Varita Básica en una bola de fuego explosiva,\ndealing up to 50% of their vida máx as daño. Cooldown: 4 segundos\nEl daño es reducido contra humanos y aún más contra bosses
+
+icewand_0=Transforma un ataque de tu Varita Básica en un protyectil gélido\nfreezes enemies for 5 segundos. Cooldown: 24 segundos
+icewand_1=Transforma un ataque de tu Varita Básica en un protyectil gélido\nfreezes enemies for 5 segundos. Cooldown: 12 segundos
+icewand_2=Transforma un ataque de tu Varita Básica en un protyectil gélido\nfreezes enemies for 5 segundos. Cooldown: 6 segundos
+icewand_3=Transforma un ataque de tu Varita Básica en un protyectil gélido\nfreezes enemies for 5 segundos. Cooldown: 4 segundos
+
+thunderwand_0=Transforma un ataque de tu Varita Básica en una carga eléctrica que libera un rato\neste aturde pir 2 segundos y daña con el 20% de su vida máx. Cooldown: 24 segundos\nEl daño es reducido contra humanos y no afecta bosses
+thunderwand_1=Transforma un ataque de tu Varita Básica en una carga eléctrica que libera un rato\neste aturde pir 2 segundos y daña con el 20% de su vida máx. Cooldown: 12 segundos\nEl daño es reducido contra humanos y no afecta bosses
+thunderwand_2=Transforma un ataque de tu Varita Básica en una carga eléctrica que libera un rato\neste aturde pir 2 segundos y daña con el 20% de su vida máx. Cooldown: 6 segundos\nEl daño es reducido contra humanos y no afecta bosses
+thunderwand_3=Transforma un ataque de tu Varita Básica en una carga eléctrica que libera un rato\neste aturde pir 2 segundos y daña con el 20% de su vida máx. Cooldown: 4 segundos\nEl daño es reducido contra humanos y no afecta bosses
+
+overcharge_0=Mejora tu Daño Mágico en base a tu maná actual,\ngana hasta +20% de Daño Mágico cuando tu maná está repleto
+overcharge_1=Mejora tu Daño Mágico en base a tu maná actual,\ngana hasta +40% de Daño Mágico cuando tu maná está repleto
+overcharge_2=Mejora tu Daño Mágico en base a tu maná actual,\ngana hasta +80% de Daño Mágico cuando tu maná está repleto
+
+firereaction_0=Ejecuta el efecto de Varita de Fuego cuando recibes daño\nCooldown: 16 segundos
+firereaction_1=Ejecuta el efecto de Varita de Fuego cuando recibes daño\nCooldown: 8 segundos
+firereaction_2=Ejecuta el efecto de Varita de Fuego cuando recibes daño\nCooldown: 4 segundos
+
+icereaction_0=Ejecuta el efecto de Varita de Hielo cuando recibes daño\nCooldown: 16 segundos
+icereaction_1=Ejecuta el efecto de Varita de Hielo cuando recibes daño\nCooldown: 8 segundos
+icereaction_2=Ejecuta el efecto de Varita de Hielo cuando recibes daño\nCooldown: 4 segundos
+
+thunderreaction_0=Ejecuta el efecto de Varita del Trueno cuando recibes daño\nCooldown: 16 segundos
+thunderreaction_1=Ejecuta el efecto de Varita del Trueno cuando recibes daño\nCooldown: 8 segundos
+thunderreaction_2=Ejecuta el efecto de Varita del Trueno cuando recibes daño\nCooldown: 4 segundos
+
+healingarea_0=Libera un área de curación mágica cada 12 segundos,\nrecuperando el 2% de tu máx Vida a ti y aliados cercanos\nEscala con Curación Mágica
+healingarea_1=Libera un área de curación mágica cada 9 segundos,\nrecuperando el 2% de tu máx Vida a ti y aliados cercanos\nEscala con Curación Mágica
+healingarea_2=Libera un área de curación mágica cada 6 segundos,\nrecuperando el 2% de tu máx Vida a ti y aliados cercanos\nEscala con Curación Mágica
+healingarea_3=Libera un área de curación mágica cada 3 segundos,\nrecuperando el 2% de tu máx Vida a ti y aliados cercanos\nEscala con Curación Mágica
+
+sacredjudgment_0=Gana 1% de Daño por cada punto de Curación Mágica realizado, durante 3 segundos,\ncon un máximo de 30%
+sacredjudgment_1=Gana 1% de Daño por cada punto de Curación Mágica realizado, durante 3 segundos,\ncon un máximo de 60%
+sacredjudgment_2=Gana 2% de Daño por cada punto de Curación Mágica realizado, durante 3 segundos,\ncon un máximo de 120%
+
+
+[item]
+basicwand=Varita Básica
+basicstaff=Bastón Básico
+scrollofoblivion=Pergamino del Olvido
+tomeofoblivion=Tomo del Olvido
+codexofoblivion=Códex del Olvido
+grimoireofoblivion=Grimorio del Olvido
+
+
+[itemtooltips]
+taltentpointsrefund=Recupera tus Puntos de Talento
+scrollofoblivion=Olvida tu última habilidad elegida
+tomeofoblivion=Olvida tu últimas 3 habilidades elegidas
+codexofoblivion=Olvida tu últimas 8 habilidades elegidas
+grimoireofoblivion=Olvida todas tus habilidades elegidas

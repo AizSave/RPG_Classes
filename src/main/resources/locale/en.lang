@@ -1,0 +1,392 @@
+# Translation made by Save (https://steamcommunity.com/id/Aiz_Save/)
+
+[global]
+rpgclasses=§!RPG Classes
+
+
+[buffmodifiers]
+dodgechance=<mod>% Dodge Chance
+
+
+[rpgclass]
+
+// Classes
+fighter=Fighter
+rogue=Rogue
+ranger=Ranger
+sorcerer=Sorcerer
+summoner=Summoner
+healer=Healer
+
+// Principal Abilities
+warrior=Warrior
+barbarian=Barbarian
+assassin=Assassin
+shadow=Shadow
+sniper=Sniper
+beastmaster=Beast Master
+apprentice=Apprentice
+wizard=Wizard
+priest=Priest
+paladin=Paladin
+
+// Basic Abilities
+endurance=Endurance
+fortitude=Fortitude
+strength=Strength
+recovery=Recovery
+lethality=Lethality
+swiftness=Swiftness
+quickhands=Quick Hands
+stealth=Stealth
+accuracy=Accuracy
+precision=Precision
+huntersmark=Hunter's Mark
+manaspring=Mana Spring
+arcanepower=Arcane Power
+arcaneprecision=Arcane Precision
+abundantarmy=Abundant Army
+leadership=Leadership
+healing=Healing
+graceful=Graceful
+
+// Abilities
+ironwill=Iron Will
+armoredflesh=Armored Flesh
+frenziedguard=Frenzied Guard
+bloodhaste=Blood Haste
+relentlessstrikes=Relentless Strikes
+relentlesschase=Relentless Chase
+relentlessevasion=Relentless Evasion
+criticaledge=Critical Edge
+magicranger=Magic Ranger
+plasmagrenade=Plasma Grenade
+bowmastery=Bow Mastery
+firewand=Fire Wand
+icewand=Ice Wand
+thunderwand=Thunder Wand
+overcharge=Overcharge
+firereaction=Fire Reaction
+icereaction=Ice Reaction
+thunderreaction=Thunder Reaction
+evasiveinstinct=Evasive Instinct
+evasivelethality=Evasive Lethality
+healingarea=Healing Area
+sacredjudgment=Sacred Judgment
+
+
+[classmessage]
+alreadyunlocked=This ability is already unlocked
+needsprincipalability=You need to unlock a class's principal ability first
+needsanteriorlevel=You need to unlock the previous level of this ability first
+needsrequiredability=You need to unlock the required ability first
+lockedbyanotherability=This ability is locked by another ability you have unlocked
+needsmoreaffinity=You don't have enough affinity with this class
+needsmoretalentpoints=You need more talent points to unlock this ability
+abilityunlocked=You have unlocked the ability <ability> level <level>!
+alreadyprincipalability=You have already unlocked a class's principal ability
+newmobkill=You gained <exp> experience for killing <mob> for the first time
+newlevel=Congratulations! You've reached level <level>. Press [input=openclassesmenu] to use your new Talent Point!
+talentpointsrestarted=You have deselected all your abilities
+talentpointsrestarted8=You have deselected your last 8 abilities:\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
+talentpointsrestarted3=You have deselected your last 3 abilities:\n- <hab0>\n- <hab1>\n- <hab2>
+talentpointsrestarted1=You have deselected your last ability: <hab>
+
+
+[controls]
+openclassesmenu=Open Classes Menu
+
+
+[message]
+dodge=Dodge!
+xp=XP
+levelup=Level Up!
+
+
+[classescontainer]
+affinity=<affinity> affinity
+abilityname=<ability> level <level>
+level=Level: <level>
+talentpoints=Talent: <free> / <total>
+experience=EXP: <exp> / <nextexp>
+totalexperience=Total EXP: <exp>
+
+
+[abilitydescription]
+name=§i<ability>§0 level §b<level>
+pointtalentreq=Talent Points: <points>
+affinityreq=Affinity: <affinity>
+abilityreq=Requires <ability> ability
+lockedbyanotherabilitysingle=Locked by <ability>
+lockedbyanotherabilitylist=Locked by the following abilities:
+abilityantreq=§6Requires the previous level
+principalabilityreq=§6Requires a class's principal ability
+alreadyprincipalability=§6You have already unlocked a class's principal ability
+clicktounlock=[input=mouse1] to unlock
+
+// Subclasses
+warrior_0=+20% Melee and Range damage\nDamage to attackers based on your armor\nHalf damage to distant attackers\n-50% Mana
+barbarian_0=+100% Total Health and Health Regen\nIncreases Melee Damage and movement speed while\nattacking by +1% for each 1% of Health lost\nYour armor, resilience and mana stats will be always 0
+
+assassin_0=+50% Melee Crit Damage and +10% Crit Chance\n+20% Dodge Chance\n-25% Armor and -25% Max Health
+shadow_0=-20% Target Range and +30% Movement Speed\n+50% Melee Crit Damage while in Dark Áreas\n+20% Crit Chance while in Dark Áreas\n-25% Armor and -25% Max Health
+
+sniper_0=+100% Projectile Velocity\nGreatly increases Range Damage the farther\nyou are from the enemy up to +200%\n-25% Armor and -25% Max Health
+beastmaster_0=+100% Range Crit Damage\nYour new wolf companion marks enemies for 5 seconds\n100% crit chance to marked enemies\n-25% Armor, -25% Max Health, -50% Attack Speed
+
+apprentice_0=+100% Max Mana, +100% Mana Regen\n-50% Armor and -25% Max Health
+wizard_0=+200% Magic Damage, +100% Mana Regen\nNo movement penalization when attacking\n+50% Mana Usage, -100% to all non-Magic Damage\n-50% Armor, -50% Max Health, -50% Movement Speed
+
+summoner_0=Bypass default summons nerf:\n> -25% Summon Damage, capped at +0%\n\n-25% Armor, -25% Max Health
+
+priest_0=+100% Magic Healing\n-50% Armor and -50% Max Health
+paladin_0=+50% Armor, +50% Magic Healing Received\n-25% Movement Speed, -50% Attack Speed
+
+// Basic Abilities
+endurance_0=+5 Max Health\n-1% Incoming Damage
+endurance_1=+10 Max Health\n-2% Incoming Damage
+endurance_2=+15 Max Health\n-3% Incoming Damage
+endurance_3=+20 Max Health\n-4% Incoming Damage
+endurance_4=+30 Max Health\n-6% Incoming Damage
+endurance_5=+40 Max Health\n-8% Incoming Damage
+
+fortitude_0=+10% Armor
+fortitude_1=+20% Armor
+fortitude_2=+30% Armor
+fortitude_3=+40% Armor
+fortitude_4=+60% Armor
+fortitude_5=+80% Armor
+
+strength_0=+3% Melee Damage\n+5% Mining Speed
+strength_1=+6% Melee Damage\n+10% Mining Speed
+strength_2=+9% Melee Damage\n+15% Mining Speed
+strength_3=+12% Melee Damage\n+20% Mining Speed
+strength_4=+18% Melee Damage\n+30% Mining Speed
+strength_5=+24% Melee Damage\n+40% Mining Speed
+
+recovery_0=+10% Health Regen out combat\n+5% Health Regen in combat
+recovery_1=+20% Health Regen out combat\n+10% Health Regen in combat
+recovery_2=+30% Health Regen out combat\n+15% Health Regen in combat
+recovery_3=+40% Health Regen out combat\n+20% Health Regen in combat
+recovery_4=+60% Health Regen out combat\n+30% Health Regen in combat
+recovery_5=+80% Health Regen out combat\n+40% Health Regen in combat
+
+lethality_0=+2% Crit Chance\n+5% Melee Crit Damage
+lethality_1=+4% Crit Chance\n+10% Melee Crit Damage
+lethality_2=+6% Crit Chance\n+15% Melee Crit Damage
+lethality_3=+8% Crit Chance\n+20% Melee Crit Damage
+lethality_4=+12% Crit Chance\n+30% Melee Crit Damage
+lethality_5=+16% Crit Chance\n+40% Melee Crit Damage
+
+swiftness_0=+3% Movement Speed\n+3% Dodge
+swiftness_1=+6% Movement Speed\n+6% Dodge
+swiftness_2=+9% Movement Speed\n+9% Dodge
+swiftness_3=+12% Movement Speed\n+12% Dodge
+swiftness_4=+18% Movement Speed\n+18% Dodge
+swiftness_5=+24% Movement Speed\n+24% Dodge
+
+quickhands_0=+5% Attack Speed\n+10% Throwing Velocity
+quickhands_1=+10% Attack Speed\n+20% Throwing Velocity
+quickhands_2=+15% Attack Speed\n+30% Throwing Velocity
+quickhands_3=+20% Attack Speed\n+40% Throwing Velocity
+quickhands_4=+30% Attack Speed\n+60% Throwing Velocity
+quickhands_5=+40% Attack Speed\n+80% Throwing Velocity
+
+stealth_0=-5% Target Range
+stealth_1=-10% Target Range
+stealth_2=-15% Target Range
+stealth_3=-20% Target Range
+stealth_4=-30% Target Range
+stealth_5=-40% Target Range
+
+accuracy_0=+3% Range Damage\n+5% Projectile Velocity
+accuracy_1=+6% Range Damage\n+10% Projectile Velocity
+accuracy_2=+9% Range Damage\n+15% Projectile Velocity
+accuracy_3=+12% Range Damage\n+20% Projectile Velocity
+accuracy_4=+18% Range Damage\n+30% Projectile Velocity
+accuracy_5=+24% Range Damage\n+40% Projectile Velocity
+
+precision_0=+2% Crit Chance\n+5% Ranged Crit Damage
+precision_1=+4% Crit Chance\n+10% Ranged Crit Damage
+precision_2=+6% Crit Chance\n+15% Ranged Crit Damage
+precision_3=+8% Crit Chance\n+20% Ranged Crit Damage
+precision_4=+12% Crit Chance\n+30% Ranged Crit Damage
+precision_5=+16% Crit Chance\n+40% Ranged Crit Damage
+
+huntersmark_0=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+10% Damage to Marked enemies
+huntersmark_1=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+20% Damage to Marked enemies
+huntersmark_2=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+30% Damage to Marked enemies
+huntersmark_3=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+40% Damage to Marked enemies
+huntersmark_4=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+60% Damage to Marked enemies
+huntersmark_5=Range attacks will mark the enemy for 5 seconds\nCooldown: 5 seconds\n+80% Damage to Marked enemies
+
+manaspring_0=+5 Max Mana\n-3% Mana Usage
+manaspring_1=+10 Max Mana\n-6% Mana Usage
+manaspring_2=+15 Max Mana\n-9% Mana Usage
+manaspring_3=+20 Max Mana\n-12% Mana Usage
+manaspring_4=+30 Max Mana\n-18% Mana Usage
+manaspring_5=+40 Max Mana\n-24% Mana Usage
+
+arcanepower_0=+3% Magic Damage\n+5% Mana Regen
+arcanepower_1=+6% Magic Damage\n+10% Mana Regen
+arcanepower_2=+9% Magic Damage\n+15% Mana Regen
+arcanepower_3=+12% Magic Damage\n+20% Mana Regen
+arcanepower_4=+18% Magic Damage\n+30% Mana Regen
+arcanepower_5=+24% Magic Damage\n+40% Mana Regen
+
+arcaneprecision_0=+2% Crit Chance\n+5% Magic Crit Damage
+arcaneprecision_1=+4% Crit Chance\n+10% Magic Crit Damage
+arcaneprecision_2=+6% Crit Chance\n+15% Magic Crit Damage
+arcaneprecision_3=+8% Crit Chance\n+20% Magic Crit Damage
+arcaneprecision_4=+12% Crit Chance\n+30% Magic Crit Damage
+arcaneprecision_5=+16% Crit Chance\n+40% Magic Crit Damage
+
+abundantarmy_0=+1 Max Summon
+abundantarmy_1=+2 Max Summons
+abundantarmy_2=+3 Max Summons
+abundantarmy_3=+4 Max Summons
+abundantarmy_4=+5 Max Summons
+abundantarmy_5=+6 Max Summons
+
+leadership_0=+5% Summons Speed\n+5% Summons Attack Speed
+leadership_1=+10% Summons Speed\n+10% Summons Attack Speed
+leadership_2=+15% Summons Speed\n+15% Summons Attack Speed
+leadership_3=+20% Summons Speed\n+20% Summons Attack Speed
+leadership_4=+30% Summons Speed\n+30% Summons Attack Speed
+leadership_5=+40% Summons Speed\n+40% Summons Attack Speed
+leadership_6=+50% Summons Speed\n+50% Summons Attack Speed
+leadership_7=+60% Summons Speed\n+60% Summons Attack Speed
+leadership_8=+70% Summons Speed\n+70% Summons Attack Speed
+leadership_9=+80% Summons Speed\n+80% Summons Attack Speed
+leadership_10=+90% Summons Speed\n+90% Summons Attack Speed
+leadership_11=+100% Summons Speed\n+100% Summons Attack Speed
+
+healing_0=+5% Magic Healing
+healing_1=+10% Magic Healing
+healing_2=+15% Magic Healing
+healing_3=+20% Magic Healing
+healing_4=+30% Magic Healing
+healing_5=+40% Magic Healing
+healing_6=+50% Magic Healing
+healing_7=+60% Magic Healing
+healing_8=+70% Magic Healing
+healing_9=+80% Magic Healing
+healing_10=+90% Magic Healing
+healing_11=+100% Magic Healing
+
+graceful_0=+5% Magic Healing Grace
+graceful_1=+10% Magic Healing Grace
+graceful_2=+15% Magic Healing Grace
+graceful_3=+20% Magic Healing Grace
+graceful_4=+30% Magic Healing Grace
+graceful_5=+40% Magic Healing Grace
+
+// Abilities
+ironwill_0=While in combat, regenerate 0.5 health per second
+ironwill_1=While in combat, regenerate 1 health per second
+ironwill_2=While in combat, regenerate 2 health per second
+
+armoredflesh_0=Upon receiving a fatal attack, you will keep 1 Health\nand become immortal for 5 seconds\nCooldown: 90 seconds
+armoredflesh_1=Upon receiving a fatal attack, you will keep 1 Health\nand become immortal for 5 seconds\nCooldown: 60 seconds
+armoredflesh_2=Upon receiving a fatal attack, you will keep 1 Health\nand become immortal for 5 seconds\nCooldown: 30 seconds
+
+frenziedguard_0=-15% Damage taken for 3 seconds after landing a melee attack
+frenziedguard_1=-15% Damage taken for 3 seconds after landing a melee attack\nCan stack up to 2 times
+frenziedguard_2=-15% Damage taken for 5 seconds after landing a melee attack\nCan stack up to 3 times
+
+bloodhaste_0=Increases Movement Speed by +0.15% for each 1% of Health lost
+bloodhaste_1=Increases Movement Speed by +0.3% for each 1% of Health lost
+bloodhaste_2=Increases Movement Speed by +0.6% for each 1% of Health lost
+
+relentlessstrikes_0=Landing an attack at close range grants +10% Attack Speed for 2 seconds\nCan stack up to 2 times
+relentlessstrikes_1=Landing an attack at close range grants +10% Attack Speed for 2 seconds\nCan stack up to 4 times
+relentlessstrikes_2=Landing an attack at close range grants +10% Attack Speed for 2 seconds\nCan stack up to 8 times
+
+relentlesschase_0=Landing an attack at close range grants +10% Movement Speed for 2 seconds\nCan stack up to 2 times
+relentlesschase_1=Landing an attack at close range grants +10% Movement Speed for 2 seconds\nCan stack up to 4 times
+relentlesschase_2=Landing an attack at close range grants +10% Movement Speed for 2 seconds\nCan stack up to 8 times
+
+relentlessevasion_0=Landing an attack at close range grants +3% Dodge Chance for 2 seconds\nCan stack up to 2 times
+relentlessevasion_1=Landing an attack at close range grants +3% Dodge Chance for 2 seconds\nCan stack up to 4 times
+relentlessevasion_2=Landing an attack at close range grants +3% Dodge Chance for 2 seconds\nCan stack up to 8 times
+
+criticaledge_0=Increases Crit Chance by +0.2% for each 1% of Health lost
+criticaledge_1=Increases Crit Chance by +0.4% for each 1% of Health lost
+criticaledge_2=Increases Crit Chance by +0.8% for each 1% of Health lost
+
+evasiveinstinct_0=Dodging an attack increases Movement Speed by 15% for 5 seconds
+evasiveinstinct_1=Dodging an attack increases Movement Speed by 30% for 5 seconds
+evasiveinstinct_2=Dodging an attack increases Movement Speed by 60% for 5 seconds
+
+evasivelethality_0=Dodging an attack increases Crit Chance by 10% for 5 seconds
+evasivelethality_1=Dodging an attack increases Crit Chance by 20% for 5 seconds
+evasivelethality_2=Dodging an attack increases Crit Chance by 40% for 5 seconds
+
+magicranger_0=Upon hitting an enemy with a Range attack, you will lose 2 mana in\nexchange for +20% damage on the attack. +40% damage if the enemy is marked\nThis only works if you have more than half of your mana
+magicranger_1=Upon hitting an enemy with a Range attack, you will lose 1 mana in\nexchange for +20% damage on the attack. +40% damage if the enemy is marked\nThis only works if you have more than half of your mana
+magicranger_2=Upon hitting an enemy with a Range attack, you will lose 0.5 mana in\nexchange for +20% damage on the attack. +40% damage if the enemy is marked\nThis only works if you have more than half of your mana
+
+plasmagrenade_0=Every 8 gun shots, fire a homing explosive projectile\nThe projectile will hunt marked enemies\nThe damage is the half of the original projectile damage
+plasmagrenade_1=Every 8 gun shots, fire a homing explosive projectile\nThe projectile will hunt marked enemies\nThe damage is the original projectile damage
+plasmagrenade_2=Every 8 gun shots, fire a homing explosive projectile\nThe projectile will hunt marked enemies\nThe damage is x2 the original projectile damage
+
+bowmastery_0=Unleash an Unstable Gel Arrow when attacking with a bow in the direction of the nearest\nmarked enemy. Cooldown: 4 seconds
+bowmastery_1=Unleash an Unstable Gel Arrow when attacking with a bow in the direction of the nearest\nmarked enemy. Cooldown: 2 seconds
+bowmastery_2=Unleash an Unstable Gel Arrow when attacking with a bow in the direction of the nearest\nmarked enemy. Cooldown: 1 seconds
+
+firewand_0=Transforms your Basic Wand attack into a fiery burst that explodes on impact,\ndealing up to 50% of their max health as damage. Cooldown: 24 seconds\nThe damage is drastically reduced against humans and even more against bosses
+firewand_1=Transforms your Basic Wand attack into a fiery burst that explodes on impact,\ndealing up to 50% of their max health as damage. Cooldown: 12 seconds\nThe damage is drastically reduced against humans and even more against bosses
+firewand_2=Transforms your Basic Wand attack into a fiery burst that explodes on impact,\ndealing up to 50% of their max health as damage. Cooldown: 6 seconds\nThe damage is drastically reduced against humans and even more against bosses
+firewand_3=Transforms your Basic Wand attack into a fiery burst that explodes on impact,\ndealing up to 50% of their max health as damage. Cooldown: 4 seconds\nThe damage is drastically reduced against humans and even more against bosses
+
+icewand_0=Transforms your Basic Wand attack into an icy blast that\nfreezes enemies for 5 seconds. Cooldown: 24 seconds
+icewand_1=Transforms your Basic Wand attack into an icy blast that\nfreezes enemies for 5 seconds. Cooldown: 12 seconds
+icewand_2=Transforms your Basic Wand attack into an icy blast that\nfreezes enemies for 5 seconds. Cooldown: 6 seconds
+icewand_3=Transforms your Basic Wand attack into an icy blast that\nfreezes enemies for 5 seconds. Cooldown: 4 seconds
+
+thunderwand_0=Transforms your Basic Wand attack into an electric surge that will call a thunder that stun\nfor 2 seconds and dealing 20% of their max health as damage. Cooldown: 24 seconds\nThe damage is drastically reduced against humans and don't affect bosses
+thunderwand_1=Transforms your Basic Wand attack into an electric surge that will call a thunder that stun\nfor 2 seconds and dealing 20% of their max health as damage. Cooldown: 12 seconds\nThe damage is drastically reduced against humans and don't affect bosses
+thunderwand_2=Transforms your Basic Wand attack into an electric surge that will call a thunder that stun\nfor 2 seconds and dealing 20% of their max health as damage. Cooldown: 6 seconds\nThe damage is drastically reduced against humans and don't affect bosses
+thunderwand_3=Transforms your Basic Wand attack into an electric surge that will call a thunder that stun\nfor 2 seconds and dealing 20% of their max health as damage. Cooldown: 4 seconds\nThe damage is drastically reduced against humans and don't affect bosses
+
+overcharge_0=Boost your magical damage based on your current mana,\ngaining up to a +20% bonus when your mana is full
+overcharge_1=Boost your magical damage based on your current mana,\ngaining up to a +40% bonus when your mana is full
+overcharge_2=Boost your magical damage based on your current mana,\ngaining up to a +80% bonus when your mana is full
+
+firereaction_0=Executes the effect of Fire Wand on you when you receive damage\nCooldown: 16 seconds
+firereaction_1=Executes the effect of Fire Wand on you when you receive damage\nCooldown: 8 seconds
+firereaction_2=Executes the effect of Fire Wand on you when you receive damage\nCooldown: 4 seconds
+
+icereaction_0=Executes the effect of Ice Wand on you when you receive damage\nCooldown: 16 seconds
+icereaction_1=Executes the effect of Ice Wand on you when you receive damage\nCooldown: 8 seconds
+icereaction_2=Executes the effect of Ice Wand on you when you receive damage\nCooldown: 4 seconds
+
+thunderreaction_0=Executes the effect of Thunder Wand on you when you receive damage\nCooldown: 16 seconds
+thunderreaction_1=Executes the effect of Thunder Wand on you when you receive damage\nCooldown: 8 seconds
+thunderreaction_2=Executes the effect of Thunder Wand on you when you receive damage\nCooldown: 4 seconds
+
+healingarea_0=Releases a magic healing area every 12 seconds,\nrestoring 2% of your max Health to you and all nearby allies\nScales with Magic Healing
+healingarea_1=Releases a magic healing area every 9 seconds,\nrestoring 2% of your max Health to you and all nearby allies\nScales with Magic Healing
+healingarea_2=Releases a magic healing area every 6 seconds,\nrestoring 2% of your max Health to you and all nearby allies\nScales with Magic Healing
+healingarea_3=Releases a magic healing area every 3 seconds,\nrestoring 2% of your max Health to you and all nearby allies\nScales with Magic Healing
+
+sacredjudgment_0=Gains 1% Damage for each point of Magic Healing done over 3 seconds,\nup to a maximum of 30%
+sacredjudgment_1=Gains 1% Damage for each point of Magic Healing done over 3 seconds,\nup to a maximum of 60%
+sacredjudgment_2=Gains 2% Damage for each point of Magic Healing done over 3 seconds,\nup to a maximum of 120%
+
+
+[item]
+basicwand=Basic Wand
+basicstaff=Basic Staff
+scrollofoblivion=Scroll of Oblivion
+tomeofoblivion=Tome of Oblivion
+codexofoblivion=Codex of Oblivion
+grimoireofoblivion=Grimoire of Oblivion
+
+
+[itemtooltips]
+taltentpointsrefund=Refunds Talent Points to use on other abilities
+scrollofoblivion=Forgets your last chosen ability
+tomeofoblivion=Forgets your last 3 chosen abilities
+codexofoblivion=Forgets your last 8 chosen abilities
+grimoireofoblivion=Forgets all your chosen abilities

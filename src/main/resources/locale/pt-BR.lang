@@ -1,0 +1,392 @@
+# Translation made by Aurora (https://steamcommunity.com/id/rivotrilprime/)
+
+[global]
+rpgclasses=§!RPG Classes
+
+
+[buffmodifiers]
+dodgechance=<mod>% de Chance de Esquiva
+
+
+[rpgclass]
+
+// Classes
+fighter=Guerreiro
+rogue=Ladino
+ranger=Patrulheiro
+sorcerer=Feiticeiro
+summoner=Invocador
+healer=Curandeiro
+
+// Habilidades Principais
+warrior=Guerreiro
+barbarian=Bárbaro
+assassin=Assassino
+shadow=Sombra
+sniper=Francotirador
+beastmaster=Mestre das Feras
+apprentice=Aprendiz
+wizard=Mago
+priest=Sacerdote
+paladin=Paladino
+
+// Habilidades Básicas
+endurance=Resistência
+fortitude=Fortitude
+strength=Força
+recovery=Recuperação
+lethality=Letalidade
+swiftness=Celeridade
+quickhands=Mãos Ágeis
+stealth=Furtividade
+accuracy=Acurácia
+precision=Precisão
+huntersmark=Marca do Caçador
+manaspring=Fonte de Mana
+arcanepower=Poder Arcano
+arcaneprecision=Precisão Arcana
+abundantarmy=Exército Abundante
+leadership=Liderança
+healing=Cura
+graceful=Graça
+
+// Habilidades
+ironwill=Vontade de Ferro
+armoredflesh=Pele Blindada
+frenziedguard=Guarda Frenética
+bloodhaste=Fúria de Sangue
+relentlessstrikes=Golpes Implacáveis
+relentlesschase=Perseguição Implacável
+relentlessevasion=Evasão Implacável
+criticaledge=Gume Crítico
+magicranger=Patrulheiro Mágico
+plasmagrenade=Granada de Plasma
+bowmastery=Mestria com Arco
+firewand=Varinha de Fogo
+icewand=Varinha de Gelo
+thunderwand=Varinha do Trovão
+overcharge=Sobrecarga
+firereaction=Reação de Fogo
+icereaction=Reação de Gelo
+thunderreaction=Reação de Trovão
+evasiveinstinct=Instinto Evasivo
+evasivelethality=Letalidade Evasiva
+healingarea=Área de Cura
+sacredjudgment=Julgamento Sagrado
+
+
+[classmessage]
+alreadyunlocked=Você já desbloqueou esta habilidade
+needsprincipalability=Você precisa desbloquear a habilidade principal da classe primeiro
+needsanteriorlevel=Você precisa desbloquear o nível anterior desta habilidade primeiro
+needsrequiredability=Você precisa desbloquear a habilidade requerida primeiro
+lockedbyanotherability=Esta habilidade está bloqueada por outra habilidade
+needsmoreaffinity=Você não tem afinidade suficiente com esta classe
+needsmoretalentpoints=Você precisa de mais pontos de talento para desbloquear esta habilidade
+abilityunlocked=Você desbloqueou a habilidade <ability> de nível <level>!
+alreadyprincipalability=Você já desbloqueou a habilidade principal de uma classe
+newmobkill=Você ganhou <exp> de experiência por matar <mob> pela primeira vez
+newlevel=Parabéns! Você atingiu o nível <level>. Pressione [input=openclassesmenu] para usar seu novo Ponto de Talento!
+talentpointsrestarted=Você reiniciou todas as suas habilidades
+talentpointsrestarted8=Você reiniciou suas últimas 8 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>\n- <hab3>\n- <hab4>\n- <hab5>\n- <hab6>\n- <hab7>
+talentpointsrestarted3=Você reiniciou suas últimas 3 habilidades:\n- <hab0>\n- <hab1>\n- <hab2>
+talentpointsrestarted1=Você reiniciou sua última habilidade: <hab>
+
+
+[controls]
+openclassesmenu=Abrir Menu de Classes
+
+
+[message]
+dodge=Esquiva!
+xp=XP
+levelup=Subir de Nível!
+
+
+[classescontainer]
+affinity=<affinity> afinidade
+abilityname=<ability> nível <level>
+level=Nível: <level>
+talentpoints=Talento: <free> / <total>
+experience=EXP: <exp> / <nextexp>
+totalexperience=EXP Total: <exp>
+
+
+[abilitydescription]
+name=§i<ability>§0 nível §b<level>
+pointtalentreq=Pontos de Talento: <points>
+affinityreq=Afinidade: <affinity>
+abilityreq=Requer a habilidade <ability>
+lockedbyanotherabilitysingle=Bloqueada por <ability>
+lockedbyanotherabilitylist=Bloqueada pelas seguintes habilidades:
+abilityantreq=§6Requer o nível anterior
+principalabilityreq=§6Requer a habilidade principal de uma classe
+alreadyprincipalability=§6Você já desbloqueou a habilidade principal de uma classe
+clicktounlock=[input=mouse1] para desbloquear
+
+// Subclasses
+warrior_0=+20% de dano corpo a corpo e à distância\nDano aos atacantes baseado na sua armadura\nMetade do dano a atacantes à distancia\n-50% de Mana
+barbarian_0=+100% de Saúde Total e Regeneração de Saúde\nAumenta o dano corpo a corpo e a velocidade enquanto\nataca em +1% para cada 1% de saúde perdida\nSua armadura, resistência e mana serão sempre 0
+
+assassin_0=+50% de Dano Crítico Corpo a Corpo\n+10% de Chance Crítica, +20% de Chance de Esquiva\n-25% de Armadura e -25% de Saúde Máxima
+shadow_0=-20% de Alcance do Alvo e +30% de Velocidade\n+50% de Dano Crítico Corpo a Corpo em áreas escuras\n+20% de Chance Crítica em áreas escuras\n-25% de Armadura e -25% de Saúde Máxima
+
+sniper_0=+100% de Velocidade do Projétil\nAumenta muito o Dano à Distância quanto mais longe\nvocê estiver do inimigo, até +200%\n-25% de Armadura e -25% de Saúde Máxima
+beastmaster_0=+100% de Dano Crítico à Distância\nSeu companheiro lobo marca inimigos por 5 segundos\n100% de chance crítica contra inimigos marcados\n-25% de Armadura, -25% de Saúde, -50% de Velocidade
+
+apprentice_0=+100% de Mana Máxima, +100% de Regeneração de Mana\n-50% de Armadura e -25% de Saúde Máxima
+wizard_0=+200% de Dano Mágico, +100% de Regeneração de Mana\nSem penalização de movimento ao atacar\n+50% no Uso de Mana, -100% em todo dano não mágico\n-50% de Armadura, -50% de Saúde, -50% de Velocidade
+
+summoner_0=Evite o nerf padrão nas invocações: \n> -25% de Dano de Invocação, limitado a +0%\n\n-25% de Armadura, -25% de Saúde
+
+priest_0=+100% de Cura Mágica\n-50% de Armadura e -50% de Saúde Máxima
+paladin_0=+50% de Armadura, +50% de Cura Mágica Recebida\n-25% de Velocidade de Movimento\n-50% de Velocidade de Ataque
+
+// Habilidades Básicas
+endurance_0=+5 de Saúde Máxima\n-1% de Dano Recebido
+endurance_1=+10 de Saúde Máxima\n-2% de Dano Recebido
+endurance_2=+15 de Saúde Máxima\n-3% de Dano Recebido
+endurance_3=+20 de Saúde Máxima\n-4% de Dano Recebido
+endurance_4=+30 de Saúde Máxima\n-6% de Dano Recebido
+endurance_5=+40 de Saúde Máxima\n-8% de Dano Recebido
+
+fortitude_0=+10% de Armadura
+fortitude_1=+20% de Armadura
+fortitude_2=+30% de Armadura
+fortitude_3=+40% de Armadura
+fortitude_4=+60% de Armadura
+fortitude_5=+80% de Armadura
+
+strength_0=+3% de Dano Corpo a Corpo\n+5% de Velocidade de Mineração
+strength_1=+6% de Dano Corpo a Corpo\n+10% de Velocidade de Mineração
+strength_2=+9% de Dano Corpo a Corpo\n+15% de Velocidade de Mineração
+strength_3=+12% de Dano Corpo a Corpo\n+20% de Velocidade de Mineração
+strength_4=+18% de Dano Corpo a Corpo\n+30% de Velocidade de Mineração
+strength_5=+24% de Dano Corpo a Corpo\n+40% de Velocidade de Mineração
+
+recovery_0=+10% de Regeneração de Saúde fora de combate\n+5% de Regeneração de Saúde em combate
+recovery_1=+20% de Regeneração de Saúde fora de combate\n+10% de Regeneração de Saúde em combate
+recovery_2=+30% de Regeneração de Saúde fora de combate\n+15% de Regeneração de Saúde em combate
+recovery_3=+40% de Regeneração de Saúde fora de combate\n+20% de Regeneração de Saúde em combate
+recovery_4=+60% de Regeneração de Saúde fora de combate\n+30% de Regeneração de Saúde em combate
+recovery_5=+80% de Regeneração de Saúde fora de combate\n+40% de Regeneração de Saúde em combate
+
+lethality_0=+2% de Chance Crítica\n+5% de Dano Crítico Corpo a Corpo
+lethality_1=+4% de Chance Crítica\n+10% de Dano Crítico Corpo a Corpo
+lethality_2=+6% de Chance Crítica\n+15% de Dano Crítico Corpo a Corpo
+lethality_3=+8% de Chance Crítica\n+20% de Dano Crítico Corpo a Corpo
+lethality_4=+12% de Chance Crítica\n+30% de Dano Crítico Corpo a Corpo
+lethality_5=+16% de Chance Crítica\n+40% de Dano Crítico Corpo a Corpo
+
+swiftness_0=+3% de Velocidade de Movimento\n+3% de Chance de Esquiva
+swiftness_1=+6% de Velocidade de Movimento\n+6% de Chance de Esquiva
+swiftness_2=+9% de Velocidade de Movimento\n+9% de Chance de Esquiva
+swiftness_3=+12% de Velocidade de Movimento\n+12% de Chance de Esquiva
+swiftness_4=+18% de Velocidade de Movimento\n+18% de Chance de Esquiva
+swiftness_5=+24% de Velocidade de Movimento\n+24% de Chance de Esquiva
+
+quickhands_0=+5% de Velocidade de Ataque\n+10% de Velocidade de Arremesso
+quickhands_1=+10% de Velocidade de Ataque\n+20% de Velocidade de Arremesso
+quickhands_2=+15% de Velocidade de Ataque\n+30% de Velocidade de Arremesso
+quickhands_3=+20% de Velocidade de Ataque\n+40% de Velocidade de Arremesso
+quickhands_4=+30% de Velocidade de Ataque\n+60% de Velocidade de Arremesso
+quickhands_5=+40% de Velocidade de Ataque\n+80% de Velocidade de Arremesso
+
+stealth_0=-5% de Alcance do Alvo
+stealth_1=-10% de Alcance do Alvo
+stealth_2=-15% de Alcance do Alvo
+stealth_3=-20% de Alcance do Alvo
+stealth_4=-30% de Alcance do Alvo
+stealth_5=-40% de Alcance do Alvo
+
+accuracy_0=+3% de Dano à Distância\n+5% de Velocidade do Projétil
+accuracy_1=+6% de Dano à Distância\n+10% de Velocidade do Projétil
+accuracy_2=+9% de Dano à Distância\n+15% de Velocidade do Projétil
+accuracy_3=+12% de Dano à Distância\n+20% de Velocidade do Projétil
+accuracy_4=+18% de Dano à Distância\n+30% de Velocidade do Projétil
+accuracy_5=+24% de Dano à Distância\n+40% de Velocidade do Projétil
+
+precision_0=+2% de Chance Crítica\n+5% de Dano Crítico à Distância
+precision_1=+4% de Chance Crítica\n+10% de Dano Crítico à Distância
+precision_2=+6% de Chance Crítica\n+15% de Dano Crítico à Distância
+precision_3=+8% de Chance Crítica\n+20% de Dano Crítico à Distância
+precision_4=+12% de Chance Crítica\n+30% de Dano Crítico à Distância
+precision_5=+16% de Chance Crítica\n+40% de Dano Crítico à Distância
+
+huntersmark_0=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+10% de Dano a inimigos marcados
+huntersmark_1=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+20% de Dano a inimigos marcados
+huntersmark_2=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+30% de Dano a inimigos marcados
+huntersmark_3=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+40% de Dano a inimigos marcados
+huntersmark_4=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+60% de Dano a inimigos marcados
+huntersmark_5=Ataques à distância marcarão o inimigo por 5 segundos\nTempo de recarga: 5 segundos\n+80% de Dano a inimigos marcados
+
+manaspring_0=+5 de Mana Máxima\n-3% no Uso de Mana
+manaspring_1=+10 de Mana Máxima\n-6% no Uso de Mana
+manaspring_2=+15 de Mana Máxima\n-9% no Uso de Mana
+manaspring_3=+20 de Mana Máxima\n-12% no Uso de Mana
+manaspring_4=+30 de Mana Máxima\n-18% no Uso de Mana
+manaspring_5=+40 de Mana Máxima\n-24% no Uso de Mana
+
+arcanepower_0=+3% de Dano Mágico\n+5% de Regeneração de Mana
+arcanepower_1=+6% de Dano Mágico\n+10% de Regeneração de Mana
+arcanepower_2=+9% de Dano Mágico\n+15% de Regeneração de Mana
+arcanepower_3=+12% de Dano Mágico\n+20% de Regeneração de Mana
+arcanepower_4=+18% de Dano Mágico\n+30% de Regeneração de Mana
+arcanepower_5=+24% de Dano Mágico\n+40% de Regeneração de Mana
+
+arcaneprecision_0=+2% de Chance Crítica\n+5% de Dano Crítico Mágico
+arcaneprecision_1=+4% de Chance Crítica\n+10% de Dano Crítico Mágico
+arcaneprecision_2=+6% de Chance Crítica\n+15% de Dano Crítico Mágico
+arcaneprecision_3=+8% de Chance Crítica\n+20% de Dano Crítico Mágico
+arcaneprecision_4=+12% de Chance Crítica\n+30% de Dano Crítico Mágico
+arcaneprecision_5=+16% de Chance Crítica\n+40% de Dano Crítico Mágico
+
+abundantarmy_0=+1 Invocação Máxima
+abundantarmy_1=+2 Invocações Máximas
+abundantarmy_2=+3 Invocações Máximas
+abundantarmy_3=+4 Invocações Máximas
+abundantarmy_4=+5 Invocações Máximas
+abundantarmy_5=+6 Invocações Máximas
+
+leadership_0=+5% de Velocidade das Invocações\n+5% de Velocidade de Ataque das Invocações
+leadership_1=+10% de Velocidade das Invocações\n+10% de Velocidade de Ataque das Invocações
+leadership_2=+15% de Velocidade das Invocações\n+15% de Velocidade de Ataque das Invocações
+leadership_3=+20% de Velocidade das Invocações\n+20% de Velocidade de Ataque das Invocações
+leadership_4=+30% de Velocidade das Invocações\n+30% de Velocidade de Ataque das Invocações
+leadership_5=+40% de Velocidade das Invocações\n+40% de Velocidade de Ataque das Invocações
+leadership_6=+50% de Velocidade das Invocações\n+50% de Velocidade de Ataque das Invocações
+leadership_7=+60% de Velocidade das Invocações\n+60% de Velocidade de Ataque das Invocações
+leadership_8=+70% de Velocidade das Invocações\n+70% de Velocidade de Ataque das Invocações
+leadership_9=+80% de Velocidade das Invocações\n+80% de Velocidade de Ataque das Invocações
+leadership_10=+90% de Velocidade das Invocações\n+90% de Velocidade de Ataque das Invocações
+leadership_11=+100% de Velocidade das Invocações\n+100% de Velocidade de Ataque das Invocações
+
+healing_0=+5% de Cura Mágica
+healing_1=+10% de Cura Mágica
+healing_2=+15% de Cura Mágica
+healing_3=+20% de Cura Mágica
+healing_4=+30% de Cura Mágica
+healing_5=+40% de Cura Mágica
+healing_6=+50% de Cura Mágica
+healing_7=+60% de Cura Mágica
+healing_8=+70% de Cura Mágica
+healing_9=+80% de Cura Mágica
+healing_10=+90% de Cura Mágica
+healing_11=+100% de Cura Mágica
+
+graceful_0=+5% de Graça na Cura Mágica
+graceful_1=+10% de Graça na Cura Mágica
+graceful_2=+15% de Graça na Cura Mágica
+graceful_3=+20% de Graça na Cura Mágica
+graceful_4=+30% de Graça na Cura Mágica
+graceful_5=+40% de Graça na Cura Mágica
+
+// Habilidades
+ironwill_0=Enquanto em combate, regenera 0,5 de vida por segundo
+ironwill_1=Enquanto em combate, regenera 1 de vida por segundo
+ironwill_2=Enquanto em combate, regenera 2 de vida por segundo
+
+armoredflesh_0=Ao receber um ataque fatal, você manterá 1 de Vida\n e se tornará imortal por 5 segundos\nTempo de recarga: 90 segundos
+armoredflesh_1=Ao receber um ataque fatal, você manterá 1 de Vida\n e se tornará imortal por 5 segundos\nTempo de recarga: 60 segundos
+armoredflesh_2=Ao receber um ataque fatal, você manterá 1 de Vida\n e se tornará imortal por 5 segundos\nTempo de recarga: 30 segundos
+
+frenziedguard_0=-15% de Dano recebido por 3 segundos após um ataque corpo a corpo bem-sucedido
+frenziedguard_1=-15% de Dano recebido por 3 segundos após um ataque corpo a corpo bem-sucedido\nPode acumular até 2 vezes
+frenziedguard_2=-15% de Dano recebido por 5 segundos após um ataque corpo a corpo bem-sucedido\nPode acumular até 3 vezes
+
+bloodhaste_0=Aumenta a Velocidade de Movimento em +0,15% para cada 1% de Saúde perdida
+bloodhaste_1=Aumenta a Velocidade de Movimento em +0,3% para cada 1% de Saúde perdida
+bloodhaste_2=Aumenta a Velocidade de Movimento em +0,6% para cada 1% de Saúde perdida
+
+relentlessstrikes_0=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 2 vezes
+relentlessstrikes_1=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 4 vezes
+relentlessstrikes_2=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Ataque por 2 segundos\nPode acumular até 8 vezes
+
+relentlesschase_0=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento\npor 2 segundos\nPode acumular até 2 vezes
+relentlesschase_1=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento\npor 2 segundos\nPode acumular até 4 vezes
+relentlesschase_2=Acertar um ataque corpo-a-corpo concede +10% de Velocidade de Movimento\npor 2 segundos\nPode acumular até 8 vezes
+
+relentlessevasion_0=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 2 vezes
+relentlessevasion_1=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 4 vezes
+relentlessevasion_2=Acertar um ataque corpo-a-corpo concede +3% de Chance de Esquiva por 2 segundos\nPode acumular até 8 vezes
+
+criticaledge_0=Aumenta a Chance Crítica em +0,2% para cada 1% de Saúde perdida
+criticaledge_1=Aumenta a Chance Crítica em +0,4% para cada 1% de Saúde perdida
+criticaledge_2=Aumenta a Chance Crítica em +0,8% para cada 1% de Saúde perdida
+
+evasiveinstinct_0=Esquivar de um ataque aumenta a Velocidade de Movimento em 15% por 5 segundos
+evasiveinstinct_1=Esquivar de um ataque aumenta a Velocidade de Movimento em 30% por 5 segundos
+evasiveinstinct_2=Esquivar de um ataque aumenta a Velocidade de Movimento em 60% por 5 segundos
+
+evasivelethality_0=Esquivar de um ataque aumenta a Chance Crítica em 10% por 5 segundos
+evasivelethality_1=Esquivar de um ataque aumenta a Chance Crítica em 20% por 5 segundos
+evasivelethality_2=Esquivar de um ataque aumenta a Chance Crítica em 40% por 5 segundos
+
+magicranger_0=Ao acertar um inimigo com um ataque à distância, você perderá 2 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
+magicranger_1=Ao acertar um inimigo com um ataque à distância, você perderá 1 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
+magicranger_2=Ao acertar um inimigo com um ataque à distância, você perderá 0,5 de mana\nem troca de +20% de dano no ataque. +40% de dano se o inimigo estiver marcado\nIsso só funciona se você tiver mais da metade de sua mana total
+
+plasmagrenade_0=A cada 8 disparos, dispara um projétil explosivo teleguiado\nO projétil caçará inimigos marcados\nO dano é metade do dano original do projétil
+plasmagrenade_1=A cada 8 disparos, dispara um projétil explosivo teleguiado\nO projétil caçará inimigos marcados\nO dano é o dano original do projétil
+plasmagrenade_2=A cada 8 disparos, dispara um projétil explosivo teleguiado\nO projétil caçará inimigos marcados\nO dano é o dobro do dano original do projétil
+
+bowmastery_0=Dispare uma Flecha de Gel Instável ao atacar com um arco na direção do\ninimigo marcado mais próximo.\nTempo de recarga: 4 segundos
+bowmastery_1=Dispare uma Flecha de Gel Instável ao atacar com um arco na direção do\ninimigo marcado mais próximo.\nTempo de recarga: 2 segundos
+bowmastery_2=Dispare uma Flecha de Gel Instável ao atacar com um arco na direção do\ninimigo marcado mais próximo.\nTempo de recarga: 1 segundo
+
+firewand_0=Transforma seu ataque básico com Varinha em uma explosão de fogo que explode ao\nimpactar, causando até 50% da saúde máxima do inimigo como dano.\nTempo de recarga: 24 segundos\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+firewand_1=Transforma seu ataque básico com Varinha em uma explosão de fogo que explode ao\nimpactar, causando até 50% da saúde máxima do inimigo como dano.\nTempo de recarga: 12 segundos\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+firewand_2=Transforma seu ataque básico com Varinha em uma explosão de fogo que explode ao\nimpactar, causando até 50% da saúde máxima do inimigo como dano.\nTempo de recarga: 6 segundos\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+firewand_3=Transforma seu ataque básico com Varinha em uma explosão de fogo que explode ao\nimpactar, causando até 50% da saúde máxima do inimigo como dano.\nTempo de recarga: 4 segundos\nO dano é drasticamente reduzido contra humanos e ainda mais contra chefes
+
+icewand_0=Transforma seu ataque básico com Varinha em uma rajada de gelo que\ncongela os inimigos por 5 segundos.\nTempo de recarga: 24 segundos
+icewand_1=Transforma seu ataque básico com Varinha em uma rajada de gelo que\ncongela os inimigos por 5 segundos.\nTempo de recarga: 12 segundos
+icewand_2=Transforma seu ataque básico com Varinha em uma rajada de gelo que\ncongela os inimigos por 5 segundos.\nTempo de recarga: 6 segundos
+icewand_3=Transforma seu ataque básico com Varinha em uma rajada de gelo que\ncongela os inimigos por 5 segundos.\nTempo de recarga: 4 segundos
+
+thunderwand_0=Transforma seu ataque básico com Varinha em uma onda elétrica que convoca um trovão\nque atordoa por 2 segundos e causa 20% da saúde máxima do inimigo como dano.\nTempo de recarga: 24 segundos\nO dano é drasticamente reduzido contra humanos e não afeta chefes
+thunderwand_1=Transforma seu ataque básico com Varinha em uma onda elétrica que convoca um trovão\nque atordoa por 2 segundos e causa 20% da saúde máxima do inimigo como dano.\nTempo de recarga: 12 segundos\nO dano é drasticamente reduzido contra humanos e não afeta chefes
+thunderwand_2=Transforma seu ataque básico com Varinha em uma onda elétrica que convoca um trovão\nque atordoa por 2 segundos e causa 20% da saúde máxima do inimigo como dano.\nTempo de recarga: 6 segundos\nO dano é drasticamente reduzido contra humanos e não afeta chefes
+thunderwand_3=Transforma seu ataque básico com Varinha em uma onda elétrica que convoca um trovão\nque atordoa por 2 segundos e causa 20% da saúde máxima do inimigo como dano.\nTempo de recarga: 4 segundos\nO dano é drasticamente reduzido contra humanos e não afeta chefes
+
+overcharge_0=Aumenta seu dano mágico com base na sua mana atual,\nganhando até um bônus de +20% quando sua mana estiver cheia
+overcharge_1=Aumenta seu dano mágico com base na sua mana atual,\nganhando até um bônus de +40% quando sua mana estiver cheia
+overcharge_2=Aumenta seu dano mágico com base na sua mana atual,\nganhando até um bônus de +80% quando sua mana estiver cheia
+
+firereaction_0=Executa o efeito da Varinha de Fogo em você quando recebe dano\nTempo de recarga: 16 segundos
+firereaction_1=Executa o efeito da Varinha de Fogo em você quando recebe dano\nTempo de recarga: 8 segundos
+firereaction_2=Executa o efeito da Varinha de Fogo em você quando recebe dano\nTempo de recarga: 4 segundos
+
+icereaction_0=Executa o efeito da Varinha de Gelo em você quando recebe dano\nTempo de recarga: 16 segundos
+icereaction_1=Executa o efeito da Varinha de Gelo em você quando recebe dano\nTempo de recarga: 8 segundos
+icereaction_2=Executa o efeito da Varinha de Gelo em você quando recebe dano\nTempo de recarga: 4 segundos
+
+thunderreaction_0=Executa o efeito da Varinha de Trovão em você quando recebe dano\nTempo de recarga: 16 segundos
+thunderreaction_1=Executa o efeito da Varinha de Trovão em você quando recebe dano\nTempo de recarga: 8 segundos
+thunderreaction_2=Executa o efeito da Varinha de Trovão em você quando recebe dano\nTempo de recarga: 4 segundos
+
+healingarea_0=Libera uma área de cura mágica a cada 12 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
+healingarea_1=Libera uma área de cura mágica a cada 9 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
+healingarea_2=Libera uma área de cura mágica a cada 6 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
+healingarea_3=Libera uma área de cura mágica a cada 3 segundos,\nrestaurando 2% da sua Saúde Máxima para você e todos os aliados próximos\nEscala com Cura Mágica
+
+sacredjudgment_0=Ganha 1% de Dano para cada ponto de Cura Mágica realizado em 3 segundos,\naté um máximo de 30%
+sacredjudgment_1=Ganha 1% de Dano para cada ponto de Cura Mágica realizado em 3 segundos,\naté um máximo de 60%
+sacredjudgment_2=Ganha 2% de Dano para cada ponto de Cura Mágica realizado em 3 segundos,\naté um máximo de 120%
+
+
+[item]
+basicwand=Varinha Básica
+basicstaff=Bastão Básico
+scrollofoblivion=Pergaminho do Oblívio
+tomeofoblivion=Tomo do Oblívio
+codexofoblivion=Códice do Oblívio
+grimoireofoblivion=Grimório do Oblívio
+
+
+[itemtooltips]
+taltentpointsrefund=Reembolsa Pontos de Talento para usar em outras habilidades
+scrollofoblivion=Esquece sua última habilidade escolhida
+tomeofoblivion=Esquece suas últimas 3 habilidades escolhidas
+codexofoblivion=Esquece suas últimas 8 habilidades escolhidas
+grimoireofoblivion=Esquece todas as suas habilidades escolhidas
