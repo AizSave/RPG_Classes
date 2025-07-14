@@ -14,6 +14,8 @@ import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
 import rpgclasses.registry.AbilityRegistry;
 
+import java.awt.geom.Line2D;
+
 public class ScrollOfOblivion extends ConsumableItem {
     public ScrollOfOblivion() {
         super(100, true);
@@ -21,7 +23,7 @@ public class ScrollOfOblivion extends ConsumableItem {
     }
 
     @Override
-    public String canPlace(Level level, int x, int y, PlayerMob player, InventoryItem item, GNDItemMap mapContent) {
+    public String canPlace(Level level, int x, int y, PlayerMob player, Line2D playerPositionLine, InventoryItem item, GNDItemMap mapContent) {
         PlayerData playerData = PlayerDataList.getCurrentPlayer(player);
         return playerData.classAbilitiesStringIDs.isEmpty() ? "noabilities" : null;
     }
@@ -39,7 +41,7 @@ public class ScrollOfOblivion extends ConsumableItem {
             serverClient.sendChatMessage(new LocalMessage("classmessage", "talentpointsrestarted1", "hab", removedAbilityName));
         }
 
-        if (this.singleUse) {
+        if (this.isSingleUse(player)) {
             item.setAmount(item.getAmount() - 1);
         }
 

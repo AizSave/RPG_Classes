@@ -13,6 +13,8 @@ import necesse.level.maps.Level;
 import rpgclasses.data.PlayerData;
 import rpgclasses.data.PlayerDataList;
 
+import java.awt.geom.Line2D;
+
 public class GrimoireOfOblivion extends ConsumableItem {
     public GrimoireOfOblivion() {
         super(1, true);
@@ -20,7 +22,7 @@ public class GrimoireOfOblivion extends ConsumableItem {
     }
 
     @Override
-    public String canPlace(Level level, int x, int y, PlayerMob player, InventoryItem item, GNDItemMap mapContent) {
+    public String canPlace(Level level, int x, int y, PlayerMob player, Line2D playerPositionLine, InventoryItem item, GNDItemMap mapContent) {
         PlayerData playerData = PlayerDataList.getCurrentPlayer(player);
         return playerData.classAbilitiesStringIDs.isEmpty() ? "noabilities" : null;
     }
@@ -36,7 +38,7 @@ public class GrimoireOfOblivion extends ConsumableItem {
             serverClient.sendChatMessage(new LocalMessage("classmessage", "talentpointsrestarted"));
         }
 
-        if (this.singleUse) {
+        if (this.isSingleUse(player)) {
             item.setAmount(item.getAmount() - 1);
         }
 
